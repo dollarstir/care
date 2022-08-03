@@ -117,6 +117,11 @@
 	                            </div>
 
 								<div class="mb-4">
+									<label for="" style="font-weight:bold;color:black;"> Date of Birth</label>
+	                              <input type="date" class="form-control" id="exampleInputEmailx" >
+	                            </div>
+
+								<div class="mb-4">
 									<label for="" style="font-weight:bold;color:black;"> Upload Picture</label>
 	                              <input type="file" class="form-control" id="exampleInputEmailx" >
 	                            </div>

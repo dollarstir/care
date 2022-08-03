@@ -72,6 +72,8 @@
 	                            </div>
 	                            <button type="submit" class="btn btn-default btn-dark">Login to account</button>
 	                          </form>
+							  <p> Or </p>
+							  <p><a href="">Forgot password</a></p>
 	                        </div>
 	                        
 	                      </div>

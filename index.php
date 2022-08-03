@@ -121,7 +121,7 @@
 	          <div class="ulockd-icon float-start"><span class="flaticon-map-marker"></span></div>
 	          <div class="ulockd-info">
 	            <h3>Location</h3>
-	            <p class="ulockd-cell">your location here</p>
+	            <p class="ulockd-cell">AB24 1TT Aberdeen Scotland, United Kingdom</p>
 	          </div>
 	        </div>
 	      </div>

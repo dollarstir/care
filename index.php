@@ -55,12 +55,12 @@
 	                <div class="modal-dialog modal-dialog-centered modal-lg">
 	                  <div class="modal-content">
 	                    <div class="modal-header text-center">
-	                      <h4 class="modal-title" id="exampleModalLabel">Login or Register</h4>
+	                      <h4 class="modal-title" id="exampleModalLabel">Login</h4>
 	                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	                    </div>
 	                    <div class="modal-body p30">
 	                      <div class="row">
-	                        <div class="col-lg-6 col-xl-5 text-center hvr-float-shadow">
+	                        <div class="col-lg-12 col-xl-12 text-center hvr-float-shadow">
 	                          <form class="ulockd-login-form">
 	                            <h3><span class="flaticon-lock"></span> Login</h3>
 	                            <p>Enter username and password to login:</p>
@@ -73,30 +73,7 @@
 	                            <button type="submit" class="btn btn-default btn-dark">Login to account</button>
 	                          </form>
 	                        </div>
-	                        <div class="col-lg-6 col-xl-7 hvr-float-shadow">
-	                          <form class="ulockd-reg-form text-center">
-	                            <h3> <span class="flaticon-house-key"></span> Register</h3>
-	                            <p>Join our community today:</p>
-	                            <div class="mb-4">
-	                              <input type="text" class="form-control" id="exampleInputNamex" placeholder="First Name">
-	                            </div>
-	                            <div class="mb-4">
-	                              <input type="text" class="form-control" id="exampleInputNamexx" placeholder="Last Name">
-	                            </div>
-	                            <div class="mb-4">
-	                              <input type="email" class="form-control" id="exampleInputEmailx" placeholder="Email">
-	                            </div>
-	                            <div class="mb-4">
-	                              <input type="password" class="form-control" placeholder="Password">
-	                            </div>
-	                            <div class="mb-4">
-	                              <input type="password" class="form-control" placeholder="Repeat password">
-	                            </div>
-	                            <div class="mb-3 text-center">
-	                              <button type="submit" class="btn btn-default btn-dark">Sign Me Up</button>
-	                            </div>
-	                          </form>
-	                        </div>
+	                        
 	                      </div>
 	                    </div>
 	                    <!-- modal footer start here--> 
@@ -115,13 +92,13 @@
 	                <div class="modal-dialog modal-dialog-centered modal-lg">
 	                  <div class="modal-content">
 	                    <div class="modal-header text-center">
-	                      <h4 class="modal-title" id="exampleModalLabel">Login or Register</h4>
+	                      <h4 class="modal-title" id="exampleModalLabel">Register</h4>
 	                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	                    </div>
 	                    <div class="modal-body p30">
 	                      <div class="row">
 	                        
-	                        <div class="col-lg-6 col-xl-7 hvr-float-shadow">
+	                        <div class="col-lg-12 col-xl-12 hvr-float-shadow">
 	                          <form class="ulockd-reg-form text-center">
 	                            <h3> <span class="flaticon-house-key"></span> Register</h3>
 	                            <p>Join our community today:</p>
@@ -137,6 +114,11 @@
 
 								<div class="mb-4">
 	                              <input type="number" class="form-control" id="exampleInputEmailx" placeholder="Phone Number">
+	                            </div>
+
+								<div class="mb-4">
+									<label for="" style="font-weight:bold;color:black;"> Upload Picture</label>
+	                              <input type="file" class="form-control" id="exampleInputEmailx" >
 	                            </div>
 	                            <div class="mb-4">
 	                              <input type="password" class="form-control" placeholder="Password">

@@ -129,8 +129,8 @@
 	        <div class="ulockd-ohour-info style2">
 	          <div class="ulockd-icon float-start"><span class="flaticon-clock-1"></span></div>
 	          <div class="ulockd-info">
-	            <h3>Openig Hour</h3>
-	            <p class="ulockd-addrss">Mon-Sun 9:00-20:00</p>
+	            <h3>Openig Hours</h3>
+	            <p class="ulockd-addrss">Mon-Sun 9:00AM-5:00PM</p>
 	          </div>
 	        </div>
 	      </div>
@@ -139,7 +139,7 @@
 	          <div class="ulockd-icon float-start"><span class="flaticon-old-handphone"></span></div>
 	          <div class="ulockd-info">
 	            <h3>Call Us</h3>
-	            <p class="ulockd-addrss">+1234567889</p>
+	            <p class="ulockd-addrss">+447451277972</p>
 	          </div>
 	        </div>
 	      </div>

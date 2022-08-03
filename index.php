@@ -73,7 +73,7 @@
 	                            <button type="submit" class="btn btn-default btn-dark">Login to account</button>
 
 								<p> Or </p>
-							  <p><a href=""><strong>Forgot password</strong></a></p><br>
+							  <p><a href=""><strong>Forgot password?</strong></a></p><br>
 	                          </form>
 							  
 	                        </div>

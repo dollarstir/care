@@ -71,9 +71,11 @@
 	                              <input type="password" class="form-control" placeholder="Password">
 	                            </div>
 	                            <button type="submit" class="btn btn-default btn-dark">Login to account</button>
+
+								<p> Or </p>
+							  <p><a href=""><strong>Forgot password</strong></a></p><br>
 	                          </form>
-							  <p> Or </p>
-							  <p><a href="">Forgot password</a></p><br>
+							  
 	                        </div>
 	                        
 	                      </div>
@@ -103,7 +105,7 @@
 	                        <div class="col-lg-12 col-xl-12 hvr-float-shadow">
 	                          <form class="ulockd-reg-form text-center">
 	                            <h3> <span class="flaticon-house-key"></span> Register</h3>
-	                            <p>Join our community today:</p>
+	                            <p>Join our Agency today:</p>
 	                            <div class="mb-4">
 	                              <input type="text" class="form-control" id="exampleInputNamex" placeholder="First Name">
 	                            </div>

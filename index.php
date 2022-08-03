@@ -314,8 +314,8 @@
 					<div class="ulockd-srvc-column three">
 						<div class="ulockd-srv-icon"><span class="flaticon-nurse"></span></div>
 						<div class="ulockd-srvc-details">
-							<h3 class="title"><a href="assets/page-feature-service-details.html">Services 1</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<h3 class="title"><a href="assets/page-feature-service-details.html">Palliative Care</a></h3>
+							<p>We care for the terminally ill and their families, especially that provided by an organized health service.</p>
 						</div>
 					</div>
 				</div>
@@ -323,8 +323,8 @@
 					<div class="ulockd-srvc-column three">
 						<div class="ulockd-srv-icon"><span class="flaticon-medical-4"></span></div>
 						<div class="ulockd-srvc-details">
-							<h3>Service 2</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<h3>End-of-Life Care </h3>
+							<p>We Provide health care for a person nearing the end of their life or in the advanced stage of a terminal illness. Generally speaking, people who are dying need care in four areas—physical comfort, mental and emotional needs, spiritual issues, and practical tasks</p>
 						</div>
 					</div>
 				</div>
@@ -332,8 +332,8 @@
 					<div class="ulockd-srvc-column three">
 						<div class="ulockd-srv-icon"><span class="flaticon-office-block"></span></div>
 						<div class="ulockd-srvc-details">
-							<h3 class="title"><a href="assets/page-feature-service-details.html">Service 3</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<h3 class="title"><a href="assets/page-feature-service-details.html">Hospice Care</a></h3>
+							<p>We Provide health care that focuses on the palliation of a terminally ill patient's pain and symptoms and attending to their emotional and spiritual needs at the end of life. Hospice care prioritizes comfort and quality of life by reducing pain and suffering</p>
 						</div>
 					</div>
 				</div>
@@ -341,8 +341,8 @@
 					<div class="ulockd-srvc-column three">
 						<div class="ulockd-srv-icon"><span class="flaticon-folder"></span></div>
 						<div class="ulockd-srvc-details">
-							<h3>Service 4</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<h3>Nutritional Support</h3>
+							<p>We Provide Health Support and therapy for people who cannot get enough nourishment by eating or drinking. You may need it if you : Can't swallow. Have problems with your appetite </p>
 						</div>
 					</div>
 				</div>
@@ -350,8 +350,8 @@
 					<div class="ulockd-srvc-column three">
 						<div class="ulockd-srv-icon"><span class="flaticon-cross"></span></div>
 						<div class="ulockd-srvc-details">
-							<h3>Service 5</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<h3>Personal Hygiene</h3>
+							<p>We Provide Health Care Support for Residents to keep their  Personal hygiene. This practice includes bathing, washing your hands, brushing your teeth, and more. To Help Protect Prevent them Every day, from contact with millions of outside germs and viruses. </p>
 						</div>
 					</div>
 				</div>
@@ -359,8 +359,8 @@
 					<div class="ulockd-srvc-column three">
 						<div class="ulockd-srv-icon"><span class="flaticon-shape-1"></span></div>
 						<div class="ulockd-srvc-details">
-							<h3 class="title"><a href="assets/page-feature-service-details.html">Service 6</a></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<h3 class="title"><a href="assets/page-feature-service-details.html">Nursing Care</a></h3>
+							<p>Our Agency Provide Nursing care services which are included in the plan of treatment approved by the physician and which are provided by licensed nurses to Residents in the home and community. Components of the service include health-related care, social services, and other related support services.</p>
 						</div>
 					</div>
 				</div>

@@ -139,7 +139,7 @@
 	                              <input type="password" class="form-control" placeholder="Repeat password">
 	                            </div>
 	                            <div class="mb-3 text-center">
-	                              <button type="submit" class="btn btn-default btn-dark">Sign Me Up</button>
+	                              <button type="submit" class="btn btn-default btn-dark">Sign Up</button>
 	                            </div>
 	                          </form>
 	                        </div>

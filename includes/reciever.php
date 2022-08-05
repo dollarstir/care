@@ -9,6 +9,10 @@ if (isset($_GET['action'])) {
             login($email, $password);
             break;
 
+        case 'register':
+            extract($_POST);
+            register($fname, $lname, $email, $phone, $dob, $password, $repass);
+            break;
         default:
 
         break;

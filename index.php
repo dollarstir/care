@@ -106,7 +106,7 @@
 	                      <div class="row">
 	                        
 	                        <div class="col-lg-12 col-xl-12 hvr-float-shadow">
-	                          <form class="ulockd-reg-form text-center">
+	                          <form class="ulockd-reg-form text-center register">
 	                            <h3> <span class="fa fa-key"></span> Register</h3>
 	                            <p>Join our Agency today:</p>
 	                            <div class="mb-4">

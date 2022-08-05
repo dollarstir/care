@@ -75,14 +75,6 @@ function register($fname, $lname, $email, $phone, $dob, $password, $repass)
                 } else {
                     echo 'Image type is not allowed';
                 }
-                // $datejoined = date('jS F, Y');
-                // $name = $fname.' '.$lname;
-                // $insert = mysqli_query($conn, "INSERT INTO staff (name,email,phone,dob,pic,password,datejoined) VALUES ('$name','$email','$phone','$dob','$pic','$password','$datejoined')");
-                // if ($insert) {
-                //     echo 'Registration successful';
-                // } else {
-                //     echo 'Registration failed';
-                // }
             }
         }
     }

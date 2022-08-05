@@ -43,7 +43,7 @@ function register($fname, $lname, $email, $phone, $dob, $password, $repass)
             } else {
                 $datejoined = date('jS F, Y');
                 $name = $fname.' '.$lname;
-                $insert = mysqli_query($conn, "INSERT INTO staff (name,email,phone,dob,pic,password,datejoined) VALUES ('$name','$email','$phone','$dob','','$password','$datejoined')");
+                $insert = mysqli_query($conn, "INSERT INTO staff (name,email,phone,dob,pic,password,datejoined) VALUES ('$name','$email','$phone','$dob','$pic','$password','$datejoined')");
             }
         }
     }

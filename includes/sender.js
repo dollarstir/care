@@ -120,12 +120,12 @@ $('.login').submit(function(e){
 // staff registration via ajax
 
 
-$('.login').submit(function(e){
+$('.register').submit(function(e){
 
   e.preventDefault();
   
   var staff = {
-      url: 'reciever.php?action=login',
+      url: 'reciever.php?action=register',
       type: 'post',
       data: new FormData(this),
       cache: false,

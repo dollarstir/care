@@ -64,7 +64,7 @@
 	                    <div class="modal-body p30">
 	                      <div class="row">
 	                        <div class="col-lg-12 col-xl-12 text-center hvr-float-shadow">
-	                          <form class="ulockd-login-form">
+	                          <form class="ulockd-login-form login">
 	                            <h3><span class="fa fa-lock"></span> Login</h3>
 	                            <p>Enter username and password to login:</p>
 	                            <div class="mb-4">

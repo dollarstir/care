@@ -110,33 +110,33 @@
 	                            <h3> <span class="fa fa-key"></span> Register</h3>
 	                            <p>Join our Agency today:</p>
 	                            <div class="mb-4">
-	                              <input type="text" class="form-control" id="exampleInputNamex" placeholder="First Name">
+	                              <input type="text" class="form-control" id="exampleInputNamex" placeholder="First Name" name="fname">
 	                            </div>
 	                            <div class="mb-4">
-	                              <input type="text" class="form-control" id="exampleInputNamexx" placeholder="Last Name">
+	                              <input type="text" class="form-control" id="exampleInputNamexx" placeholder="Last Name" name="lname">
 	                            </div>
 	                            <div class="mb-4">
-	                              <input type="email" class="form-control" id="exampleInputEmailx" placeholder="Email">
+	                              <input type="email" class="form-control" id="exampleInputEmailx" placeholder="Email" name="email">
 	                            </div>
 
 								<div class="mb-4">
-	                              <input type="number" class="form-control" id="exampleInputEmailx" placeholder="Phone Number">
+	                              <input type="number" class="form-control" id="exampleInputEmailx" placeholder="Phone Number" name="phone">
 	                            </div>
 
 								<div class="mb-4">
 									<label for="" style="font-weight:bold;color:black;"> Date of Birth</label>
-	                              <input type="date" class="form-control" id="exampleInputEmailx" >
+	                              <input type="date" class="form-control" id="exampleInputEmailx" name="dob" >
 	                            </div>
 
 								<div class="mb-4">
 									<label for="" style="font-weight:bold;color:black;"> Upload Picture</label>
-	                              <input type="file" class="form-control" id="exampleInputEmailx" >
+	                              <input type="file" class="form-control" id="exampleInputEmailx"  name="image">
 	                            </div>
 	                            <div class="mb-4">
-	                              <input type="password" class="form-control" placeholder="Password">
+	                              <input type="password" class="form-control" placeholder="Password" name="password">
 	                            </div>
 	                            <div class="mb-4">
-	                              <input type="password" class="form-control" placeholder="Repeat password">
+	                              <input type="password" class="form-control" placeholder="Repeat password" name="repass">
 	                            </div>
 	                            <div class="mb-3 text-center">
 	                              <button type="submit" class="btn btn-default btn-dark">Sign Up</button>

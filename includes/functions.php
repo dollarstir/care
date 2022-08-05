@@ -41,9 +41,48 @@ function register($fname, $lname, $email, $phone, $dob, $password, $repass)
             if (mysqli_num_rows($check) >= 1) {
                 echo 'User already exist';
             } else {
-                $datejoined = date('jS F, Y');
-                $name = $fname.' '.$lname;
-                $insert = mysqli_query($conn, "INSERT INTO staff (name,email,phone,dob,pic,password,datejoined) VALUES ('$name','$email','$phone','$dob','$pic','$password','$datejoined')");
+                // function for image upload
+                $image = $_FILES['name']['image'];
+                $image_name = $_FILES['name']['name'];
+                $image_tmp = $_FILES['name']['tmp_name'];
+                $image_size = $_FILES['name']['size'];
+                $image_error = $_FILES['name']['error'];
+                $image_type = $_FILES['name']['type'];
+                $image_ext = explode('.', $image_name);
+                $image_ext = strtolower(end($image_ext));
+                $allowed = ['jpg', 'jpeg', 'png'];
+                if (in_array($image_ext, $allowed)) {
+                    if ($image_error === 0) {
+                        if ($image_size <= 2097152) {
+                            $image_name_new = uniqid('', true).'.'.$image_ext;
+                            $image_destination = 'uploads/'.$image_name_new;
+                            move_uploaded_file($image_tmp, $image_destination);
+                            $password = md5(mysqli_real_escape_string($conn, $password));
+                            $datejoined = date('jS F, Y');
+                            $name = $fname.' '.$lname;
+                            $insert = mysqli_query($conn, "INSERT INTO staff (name,email,phone,dob,pic,password,datejoined) VALUES ('$name','$email','$phone','$dob','$image_name_new','$password','$datejoined')");
+                            if ($insert) {
+                                echo 'Registration successful';
+                            } else {
+                                echo 'Registration failed';
+                            }
+                        } else {
+                            echo 'Image size is too big';
+                        }
+                    } else {
+                        echo 'There was an error uploading your image';
+                    }
+                } else {
+                    echo 'Image type is not allowed';
+                }
+                // $datejoined = date('jS F, Y');
+                // $name = $fname.' '.$lname;
+                // $insert = mysqli_query($conn, "INSERT INTO staff (name,email,phone,dob,pic,password,datejoined) VALUES ('$name','$email','$phone','$dob','$pic','$password','$datejoined')");
+                // if ($insert) {
+                //     echo 'Registration successful';
+                // } else {
+                //     echo 'Registration failed';
+                // }
             }
         }
     }

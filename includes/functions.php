@@ -13,5 +13,7 @@ function login($email, $password)
         session_start();
         $_SESSION['id'] = $row['id'];
         echo 'loginsuccess';
+    } else {
+        echo 'Login details not corerct';
     }
 }

@@ -472,12 +472,15 @@
 <script src="assets/js/video-player.js"></script>
 <script src="assets/js/timepicker.js"></script>
 <script src="assets/js/tweetie.js"></script>
-<script src="assets/js/sweetalert2.all.min"></script>
+<script src="assets/js/sweetalert2.all.min.js"></script>
 
 
 
 
 <!-- Custom script for all pages -->
 <script src="assets/js/script.js"></script>
+<script src="includes/sender.js"></script>
+
+
 </body>
 </html>

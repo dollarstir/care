@@ -102,7 +102,7 @@ $('.login').submit(function(e){
     e.preventDefault();
     
     var staff = {
-        url: 'reciever.php?action=login',
+        url: 'includes/reciever.php?action=login',
         type: 'post',
         data: new FormData(this),
         cache: false,
@@ -125,7 +125,7 @@ $('.register').submit(function(e){
   e.preventDefault();
   
   var staff = {
-      url: 'reciever.php?action=register',
+      url: 'includes/reciever.php?action=register',
       type: 'post',
       data: new FormData(this),
       cache: false,

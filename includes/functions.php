@@ -33,7 +33,9 @@ function register($fname, $lname, $email, $phone, $dob, $password, $repass)
     } else {
         if ($repass != $password) {
             echo 'Password mismatch';
+        } elseif (!isset($_FILES['name']['image'])) {
+            echo 'kindly aploud your profile picture';
+        } else {
         }
-        elseif(!isset($_FILES['name']['image']))
     }
 }

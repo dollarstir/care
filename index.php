@@ -68,10 +68,10 @@
 	                            <h3><span class="fa fa-lock"></span> Login</h3>
 	                            <p>Enter username and password to login:</p>
 	                            <div class="mb-4">
-	                              <input type="email" class="form-control" id="email" placeholder="Email">
+	                              <input type="email" class="form-control" id="email" placeholder="Email" name="email">
 	                            </div>
 	                            <div class="mb-4">
-	                              <input type="password" class="form-control" placeholder="Password">
+	                              <input type="password" class="form-control" placeholder="Password" name="password">
 	                            </div>
 	                            <button type="submit" class="btn btn-default btn-dark">Login to account</button>
 

@@ -41,7 +41,7 @@ function register($fname, $lname, $email, $phone, $dob, $password, $repass)
             if (mysqli_num_rows($check) >= 1) {
                 echo 'User already exist';
             } else {
-                // function for image upload
+                // inserting the user data into the database
                 $image = $_FILES['name']['image'];
                 $image_name = $_FILES['name']['name'];
                 $image_tmp = $_FILES['name']['tmp_name'];

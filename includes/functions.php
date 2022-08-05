@@ -17,3 +17,5 @@ function login($email, $password)
         echo 'Login details not corerct';
     }
 }
+
+// function for staff registration

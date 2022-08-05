@@ -117,6 +117,29 @@ $('.login').submit(function(e){
 
 
 
+// staff registration via ajax
+
+
+$('.login').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: 'reciever.php?action=login',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+
+
 
 
 

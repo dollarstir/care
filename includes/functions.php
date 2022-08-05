@@ -36,6 +36,15 @@ function register($fname, $lname, $email, $phone, $dob, $password, $repass)
         } elseif (!isset($_FILES['name']['image'])) {
             echo 'kindly aploud your profile picture';
         } else {
+            // checking if user exist
+            $check = mysqli_query($conn, "SELECT * FROM staff WHERE email ='$email' OR phone ='$phone'");
+            if (mysqli_num_rows($check) >= 1) {
+                echo 'User already exist';
+            } else {
+                $datejoined = date('jS F, Y');
+                $name = $fname.' '.$lname;
+                $insert = mysqli_query($conn, "INSERT INTO staff (name,email,phone,dob,pic,password,datejoined) VALUES ('$name','$email','$phone','$dob','','$password','$datejoined')");
+            }
         }
     }
 }

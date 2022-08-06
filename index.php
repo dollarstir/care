@@ -58,7 +58,7 @@
 	                <div class="modal-dialog modal-dialog-centered modal-lg">
 	                  <div class="modal-content">
 	                    <div class="modal-header text-center">
-	                      <h4 class="modal-title" id="exampleModalLabel">Login</h4>
+	                      <h4 class="modal-title shiftKey" id="exampleModalLabel">Login</h4>
 	                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	                    </div>
 	                    <div class="modal-body p30">
@@ -83,15 +83,13 @@
 							  </div>
 
 							  <form class="ulockd-login-form forgotpass">
-	                            <h3><span class="fa fa-lock"></span> Login</h3>
-	                            <p>Enter username and password to login:</p>
+	                            <h3><span class="fa fa-lock"></span> Forgot Password</h3>
+	                            <p>Enter valid email to recieve reset password link</p>
 	                            <div class="mb-4">
 	                              <input type="email" class="form-control" id="email" placeholder="Email" name="email">
 	                            </div>
-	                            <div class="mb-4">
-	                              <input type="password" class="form-control" placeholder="Password" name="password">
-	                            </div>
-	                            <button type="submit" class="btn btn-default btn-dark">Login to account</button>
+	                            
+	                            <button type="submit" class="btn btn-default btn-dark">Continue</button>
 
 								<p> Or </p>
 							  <p><a href=""><strong>Forgot password?</strong></a></p><br>

@@ -9,6 +9,7 @@ $(function(){
     $('.forgotpass').show();
     $('.login').hide();
     $('.fgtcont').hide();
+    $('.shiftKey').html('Forgot Password');
   });
    
 

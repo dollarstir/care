@@ -95,7 +95,7 @@ begin('Home'); ?>
                         <div class="white_box QA_section card_height_100">
                             <div class="white_box_tittle list_header m-0 align-items-center">
                                 <div class="main-title mb-sm-15">
-                                    <h3 class="m-0 nowrap">Some Available Residence</h3>
+                                    <h3 class="m-0 nowrap">Available Residence</h3>
                                 </div>
                                 <div class="box_right d-flex lms_block">
                                     <div class="serach_field-area2">

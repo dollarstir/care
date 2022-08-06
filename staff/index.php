@@ -77,7 +77,7 @@ begin('Home'); ?>
                                             <th scope="col">Location</th>
                                             <th scope="col">Appointment Date</th>
                                             
-                                            <th scope="col">Amount</th>
+                                            <!-- <th scope="col">Amount</th> -->
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -95,7 +95,7 @@ begin('Home'); ?>
                                             
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
-                                                    $29,192
+                                                    
                                                     <div class="dropdown ms-4">
                                                         <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             Action
@@ -123,7 +123,7 @@ begin('Home'); ?>
                                             
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
-                                                    $29,192
+                                                    
                                                     <div class="dropdown ms-4">
                                                         <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             Action
@@ -151,7 +151,7 @@ begin('Home'); ?>
                                             
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
-                                                    $29,192
+                                                    
                                                     <div class="dropdown ms-4">
                                                         <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             Action
@@ -179,7 +179,7 @@ begin('Home'); ?>
                                             
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
-                                                    $29,192
+                                                    
                                                     <div class="dropdown ms-4">
                                                         <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             Action
@@ -207,7 +207,7 @@ begin('Home'); ?>
                                             
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
-                                                    $29,192
+                                                    
                                                     <div class="dropdown ms-4">
                                                         <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             Action
@@ -235,7 +235,7 @@ begin('Home'); ?>
                                             
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
-                                                    $29,192
+                                                    
                                                     <div class="dropdown ms-4">
                                                         <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             Action
@@ -263,7 +263,7 @@ begin('Home'); ?>
                                             
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
-                                                    $29,192
+                                                    
                                                     <div class="dropdown ms-4">
                                                         <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             Action

@@ -77,7 +77,7 @@ begin('Home'); ?>
                                             <th scope="col">Location</th>
                                             <th scope="col">Appointment Date</th>
                                             
-                                            <!-- <th scope="col">Amount</th> -->
+                                            <th scope="col">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>

@@ -114,14 +114,14 @@ function forgotpass($email)
             <p>The Homecare Team</p>
             </body>
             </html>';
-            $mymail = 'info@phpyolk.com';
+            $mymail = 'homeassist@iamdollarstir.tk';
             $headers = 'From: '.$mymail."\r\n".
             'Reply-To: '.$email."\r\n".
             'X-Mailer: PHP/'.phpversion();
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
             if (mail($email, $subject, $message, $headers)) {
-                echo 'Password sent to your email';
+                echo 'Passwordsent';
             } else {
                 echo 'Password could not be sent';
             }

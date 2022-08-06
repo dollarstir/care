@@ -76,6 +76,23 @@ $(function(){
               });
 
         }
+
+        else if(response == 'Passwordsent'){
+
+          swal({
+              title: "Email Sent!",
+              text: "Check your email for password reset link",
+              timer: 5000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
         else if(response == 'Updated Successfully'){
 
             swal({

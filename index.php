@@ -93,9 +93,9 @@
 
 								
 	                          </form>
-							  <div class="fgtcont">
+							  <div class="logicont">
 								<p> Or </p>
-							  	<p><button  class="fgtpass"><strong>Login</strong></button></p><br>
+							  	<p><button  class="logipass"><strong>Login</strong></button></p><br>
 							  </div>
 							  
 							  

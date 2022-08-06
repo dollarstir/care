@@ -1,5 +1,5 @@
 <?php
-include '../includes/adminfunctions.php';
+include '../includes/stafffunctions.php';
 
 begin('Home'); ?>
 
@@ -7,7 +7,7 @@ begin('Home'); ?>
 
 
 
-    <?php adminsidebar(); ?>
+    <?php staffsidebar(); ?>
 
 
     <section class="main_content dashboard_part">

@@ -45,8 +45,9 @@ function begin($title)
         <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
     </head>';
 }
+// Staff Sidebar
 
- function adminsidebar()
+ function staffsidebar()
  {
      echo '<nav class="sidebar">
      <div class="logo d-flex justify-content-between">
@@ -56,9 +57,7 @@ function begin($title)
          </div>
      </div>
      <ul id="sidebar_menu">
-         <li class="side_menu_title">
-             <span>Dashboard</span>
-         </li>
+         
          <li class="mm-active">
              <a class="has-arrow" href="#" aria-expanded="false">
 

@@ -114,7 +114,7 @@ function forgotpass($email)
             <p>The Homecare Team</p>
             </body>
             </html>';
-            $mymail = 'homeassist@iamdollarstir.tk';
+            $mymail = 'info@phpyolk.com';
             $headers = 'From: '.$mymail."\r\n".
             'Reply-To: '.$email."\r\n".
             'X-Mailer: PHP/'.phpversion();

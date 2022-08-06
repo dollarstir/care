@@ -116,7 +116,7 @@ begin('Home'); ?>
                                     <thead>
                                         <tr>
                                             <th scope="col">Patients Name</th>
-                                            <th scope="col">department</th>
+                                            <th scope="col">Address</th>
                                             <th scope="col">Appointment Date</th>
                                             <th scope="col">Serial Number</th>
                                             <th scope="col">Amount</th>

@@ -162,8 +162,24 @@ $('.register').submit(function(e){
   $.ajax(staff);
 });
 
+// forget password via ajax
+$('.forgotpass').submit(function(e){
 
+  e.preventDefault();
+  
+  var staff = {
+      url: 'includes/reciever.php?action=forgotpass',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
 
+  };
+  $.ajax(staff);
+});
 
 
 

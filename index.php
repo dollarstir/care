@@ -75,9 +75,12 @@
 	                            </div>
 	                            <button type="submit" class="btn btn-default btn-dark">Login to account</button>
 
-								<p> Or </p>
-							  <p><button ><strong>Forgot password?</strong></button></p><br>
+								
 	                          </form>
+							  <div class="fgtcont">
+								<p> Or </p>
+							  	<p><button  class="fgtpass"><strong>Forgot password?</strong></button></p><br>
+							  </div>
 
 							  <form class="ulockd-login-form forgotpass">
 	                            <h3><span class="fa fa-lock"></span> Login</h3>

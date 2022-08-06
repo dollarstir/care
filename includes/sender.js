@@ -1,5 +1,15 @@
 
 $(function(){
+
+  // forgot password form 
+  $('.forgotpass').hide();
+
+  // show forgot password form 
+  $('.fgtpass').click(function(){
+    $('.forgotpass').show();
+    $('.login').hide();
+    $('.fgtcont').hide();
+  });
    
 
     function success(response){

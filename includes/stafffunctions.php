@@ -5,12 +5,6 @@ function begin($title)
     session_start();
     if (!isset($_SESSION['id'])) {
         echo '<script>window.location.href = "../index.php";</script>';
-    } else {
-        include 'dbcon.php';
-
-        $id = $_SESSION['id'];
-        $sel = mysqli_query($conn, "SELECT * FROM staff WHERE id = '$id'");
-        $row = mysqli_fetch_array($sel);
     }
 
     echo '<!DOCTYPE html>
@@ -104,6 +98,11 @@ function begin($title)
  }
 function staffheader()
 {
+    include 'dbcon.php';
+
+    $id = $_SESSION['id'];
+    $sel = mysqli_query($conn, "SELECT * FROM staff WHERE id = '$id'");
+    $row = mysqli_fetch_array($sel);
     echo '<div class="container-fluid g-0">
     <div class="row">
         <div class="col-lg-12 p-0">
@@ -126,8 +125,8 @@ function staffheader()
                     <div class="profile_info">
                         <img src="img/client_img.png" alt="#">
                         <div class="profile_info_iner">
-                            <p>Neurologist </p>
-                            <h5>Dr. Robar Smith</h5>
+                            <p>Staff </p>
+                            <h5>'.$row['name'].'</h5>
                             <div class="profile_info_details">
                                 <!--<a href="#">My Profile <i class="ti-user"></i></a>
                                 <a href="#">Settings <i class="ti-settings"></i></a>-->

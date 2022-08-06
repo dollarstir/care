@@ -118,9 +118,9 @@ function staffheader()
                             <p>Neurologist </p>
                             <h5>Dr. Robar Smith</h5>
                             <div class="profile_info_details">
-                                <a href="#">My Profile <i class="ti-user"></i></a>
-                                <a href="#">Settings <i class="ti-settings"></i></a>
-                                <a href="lgo">Log Out <i class="ti-shift-left"></i></a>
+                                <!--<a href="#">My Profile <i class="ti-user"></i></a>
+                                <a href="#">Settings <i class="ti-settings"></i></a>-->
+                                <a href="logout.php">Log Out <i class="ti-shift-left"></i></a>
                             </div>
                         </div>
                     </div>

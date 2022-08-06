@@ -79,3 +79,54 @@ function register($fname, $lname, $email, $phone, $dob, $password, $repass)
         }
     }
 }
+
+// function for forgot password
+function forgotpass($email)
+{
+    include 'dbcon.php';
+    $email = mysqli_real_escape_string($conn, $email);
+    if (empty(trim($email))) {
+        echo 'Email cannot be empty';
+    } else {
+        $sel = mysqli_query($conn, "SELECT * FROM staff WHERE email = '$email'");
+        if (mysqli_num_rows($sel) >= 1) {
+            $row = mysqli_fetch_array($sel);
+            $id = $row['id'];
+            $name = $row['name'];
+            $email = $row['email'];
+            $phone = $row['phone'];
+            $dob = $row['dob'];
+            $password = $row['password'];
+            $datejoined = $row['datejoined'];
+            $pic = $row['pic'];
+            $token = uniqid('HaST');
+            $subject = 'Password Reset';
+            $message = '<html>
+            <head>
+            <title>Password Reset</title>
+            </head>
+            <body>
+            <h1>Password Reset</h1>
+            <p>Hi '.$name.',</p>
+            <p>You recently requested to reset your password for your account on the '.$datejoined.'</p>
+            <p><a href="ha.iamdollarstir.tk/reciever.php?action=checkpass&id='.$id.'&email='.$email.'&token='.$token.'">Click on this link reset password </a>/p>
+            <p>Regards,</p>
+            <p>The Homecare Team</p>
+            </body>
+            </html>';
+            $mymail = 'homeassist@iamdollarstir.tk';
+            $headers = 'From: '.$mymail."\r\n".
+            'Reply-To: '.$email."\r\n".
+            'X-Mailer: PHP/'.phpversion();
+            $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+            if (mail($email, $subject, $message, $headers)) {
+                echo 'Password sent to your email';
+            } else {
+                echo 'Password could not be sent';
+            }
+        } else {
+            echo 'Email does not exist';
+        }
+    }
+}

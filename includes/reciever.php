@@ -13,6 +13,10 @@ if (isset($_GET['action'])) {
             extract($_POST);
             register($fname, $lname, $email, $phone, $dob, $password, $repass);
             break;
+        case 'forgotpass':
+            extract($_POST);
+            forgotpass($email);
+            break;
         default:
 
         break;

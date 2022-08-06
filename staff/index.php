@@ -76,7 +76,7 @@ begin('Home'); ?>
                                             <th scope="col"> Name of Residence</th>
                                             <th scope="col">Location</th>
                                             <th scope="col">Appointment Date</th>
-                                            <th scope="col">Serial Number</th>
+                                            
                                             <th scope="col">Amount</th>
                                         </tr>
                                     </thead>
@@ -92,7 +92,7 @@ begin('Home'); ?>
                                             </th>
                                             <td>Monte Carlo</td>
                                             <td>11/03/2020</td>
-                                            <td>MDC65454</td>
+                                            
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
                                                     $29,192
@@ -120,7 +120,7 @@ begin('Home'); ?>
                                             </th>
                                             <td>Monte Carlo</td>
                                             <td>11/03/2020</td>
-                                            <td>MDC65454</td>
+                                            
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
                                                     $29,192
@@ -148,7 +148,7 @@ begin('Home'); ?>
                                             </th>
                                             <td>Monte Carlo</td>
                                             <td>11/03/2020</td>
-                                            <td>MDC65454</td>
+                                            
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
                                                     $29,192
@@ -176,7 +176,7 @@ begin('Home'); ?>
                                             </th>
                                             <td>Monte Carlo</td>
                                             <td>11/03/2020</td>
-                                            <td>MDC65454</td>
+                                            
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
                                                     $29,192
@@ -204,7 +204,7 @@ begin('Home'); ?>
                                             </th>
                                             <td>Monte Carlo</td>
                                             <td>11/03/2020</td>
-                                            <td>MDC65454</td>
+                                            
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
                                                     $29,192
@@ -232,7 +232,7 @@ begin('Home'); ?>
                                             </th>
                                             <td>Monte Carlo</td>
                                             <td>11/03/2020</td>
-                                            <td>MDC65454</td>
+                                            
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
                                                     $29,192
@@ -260,7 +260,7 @@ begin('Home'); ?>
                                             </th>
                                             <td>Monte Carlo</td>
                                             <td>11/03/2020</td>
-                                            <td>MDC65454</td>
+                                            
                                             <td>
                                                 <div class="amoutn_action d-flex align-items-center">
                                                     $29,192

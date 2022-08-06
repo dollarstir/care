@@ -46,7 +46,7 @@ begin('Home'); ?>
                                     <div class="profile_info_details">
                                         <a href="#">My Profile <i class="ti-user"></i></a>
                                         <a href="#">Settings <i class="ti-settings"></i></a>
-                                        <a href="#">Log Out <i class="ti-shift-left"></i></a>
+                                        <a href="lgo">Log Out <i class="ti-shift-left"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -70,8 +70,8 @@ begin('Home'); ?>
                                                     <img src="img/icon/man.svg" alt="">
                                                 </div>
                                                 <div class="count_content">
-                                                    <h3><span class="counter">520</span> </h3>
-                                                    <p>Doctors</p>
+                                                    <h3><span class="counter">100</span> </h3>
+                                                    <p>Available Residence</p>
                                                 </div>
                                             </div>
                                             <div class="single_quick_activity d-flex">
@@ -79,8 +79,8 @@ begin('Home'); ?>
                                                     <img src="img/icon/cap.svg" alt="">
                                                 </div>
                                                 <div class="count_content">
-                                                    <h3><span class="counter">6969</span> </h3>
-                                                    <p>Nurses</p>
+                                                    <h3><span class="counter">20</span> </h3>
+                                                    <p>Worked on</p>
                                                 </div>
                                             </div>
                                             <div class="single_quick_activity d-flex">

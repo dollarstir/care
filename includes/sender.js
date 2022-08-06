@@ -4,12 +4,16 @@ $(function(){
   // forgot password form 
   $('.forgotpass').hide();
 
+  // hide back to login btn
+  $('.logicont').hide();
+
   // show forgot password form 
   $('.fgtpass').click(function(){
     $('.forgotpass').show();
     $('.login').hide();
     $('.fgtcont').hide();
     $('.shiftKey').html('Forgot Password');
+    $('.logicont').show();
   });
    
 

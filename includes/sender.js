@@ -15,6 +15,15 @@ $(function(){
     $('.shiftKey').html('Forgot Password');
     $('.logicont').show();
   });
+
+  // show login  form 
+  $('.logipass').click(function(){
+    $('.forgotpass').hide();
+    $('.login').show();
+    $('.fgtcont').show();
+    $('.shiftKey').html('Login');
+    $('.logicont').hide();
+  });
    
 
     function success(response){

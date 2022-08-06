@@ -73,7 +73,7 @@ function begin($title)
                  <span>Residence</span>
              </a>
              <ul>
-                 <li><a href="login.html">Available Residence</a></li>
+                 <li><a href="">Available Residence</a></li>
                  
              </ul>
          </li>
@@ -83,7 +83,7 @@ function begin($title)
                  <span>Records</span>
              </a>
              <ul>
-                 <li><a href="mail_box.html">View Records</a></li>
+                 <li><a href="">View Records</a></li>
                  
              </ul>
          </li>

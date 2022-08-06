@@ -115,8 +115,8 @@ begin('Home'); ?>
                                 <table class="table lms_table_active2">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Patients Name</th>
-                                            <th scope="col">Address</th>
+                                            <th scope="col"> Name of Residence</th>
+                                            <th scope="col">Location</th>
                                             <th scope="col">Appointment Date</th>
                                             <th scope="col">Serial Number</th>
                                             <th scope="col">Amount</th>
@@ -144,9 +144,8 @@ begin('Home'); ?>
                                                         </a>
                                                         <div class="dropdown-menu dropdown-menu-right"
                                                             aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">View</a>
-                                                            <a class="dropdown-item" href="#">Edit</a>
-                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                            <a class="dropdown-item" href="#">Request schedule</a>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -173,9 +172,8 @@ begin('Home'); ?>
                                                         </a>
                                                         <div class="dropdown-menu dropdown-menu-right"
                                                             aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">View</a>
-                                                            <a class="dropdown-item" href="#">Edit</a>
-                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                            <a class="dropdown-item" href="#">Request schedule</a>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -202,9 +200,8 @@ begin('Home'); ?>
                                                         </a>
                                                         <div class="dropdown-menu dropdown-menu-right"
                                                             aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">View</a>
-                                                            <a class="dropdown-item" href="#">Edit</a>
-                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                            <a class="dropdown-item" href="#">Request schedule</a>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -231,9 +228,8 @@ begin('Home'); ?>
                                                         </a>
                                                         <div class="dropdown-menu dropdown-menu-right"
                                                             aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">View</a>
-                                                            <a class="dropdown-item" href="#">Edit</a>
-                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                            <a class="dropdown-item" href="#">Request schedule</a>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -260,9 +256,8 @@ begin('Home'); ?>
                                                         </a>
                                                         <div class="dropdown-menu dropdown-menu-right"
                                                             aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">View</a>
-                                                            <a class="dropdown-item" href="#">Edit</a>
-                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                            <a class="dropdown-item" href="#">Request schedule</a>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -289,9 +284,8 @@ begin('Home'); ?>
                                                         </a>
                                                         <div class="dropdown-menu dropdown-menu-right"
                                                             aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">View</a>
-                                                            <a class="dropdown-item" href="#">Edit</a>
-                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                            <a class="dropdown-item" href="#">Request schedule</a>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -318,9 +312,8 @@ begin('Home'); ?>
                                                         </a>
                                                         <div class="dropdown-menu dropdown-menu-right"
                                                             aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">View</a>
-                                                            <a class="dropdown-item" href="#">Edit</a>
-                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                            <a class="dropdown-item" href="#">Request schedule</a>
+
                                                         </div>
                                                     </div>
                                                 </div>

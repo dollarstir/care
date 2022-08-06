@@ -91,9 +91,13 @@
 	                            
 	                            <button type="submit" class="btn btn-default btn-dark">Continue</button>
 
-								<p> Or </p>
-							  <p><a href=""><strong>Forgot password?</strong></a></p><br>
+								
 	                          </form>
+							  <div class="fgtcont">
+								<p> Or </p>
+							  	<p><button  class="fgtpass"><strong>Login</strong></button></p><br>
+							  </div>
+							  
 							  
 	                        </div>
 	                        

@@ -76,10 +76,10 @@
 	                            <button type="submit" class="btn btn-default btn-dark">Login to account</button>
 
 								<p> Or </p>
-							  <p><a href=""><strong>Forgot password?</strong></a></p><br>
+							  <p><button ><strong>Forgot password?</strong></button></p><br>
 	                          </form>
 
-							  <form class="ulockd-login-form login">
+							  <form class="ulockd-login-form forgotpass">
 	                            <h3><span class="fa fa-lock"></span> Login</h3>
 	                            <p>Enter username and password to login:</p>
 	                            <div class="mb-4">

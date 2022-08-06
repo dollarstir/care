@@ -325,11 +325,9 @@ begin('Home'); ?>
                                                 <div class="amoutn_action d-flex align-items-center">
                                                     $29,192
                                                     <div class="dropdown ms-4">
-                                                        <a class=" dropdown-toggle hide_pils" href="#" role="button"
-                                                            id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                                            aria-haspopup="true" aria-expanded="false">
-                                                            <i class="fas fa-ellipsis-v"></i>
-                                                        </a>
+                                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Dropdown link
+                                                    </a>
                                                         <div class="dropdown-menu dropdown-menu-right"
                                                             aria-labelledby="dropdownMenuLink">
                                                             <a class="dropdown-item" href="#">View</a>

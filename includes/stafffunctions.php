@@ -106,10 +106,10 @@ function staffheader()
                 <div class="header_right d-flex justify-content-between align-items-center">
                     <div class="header_notification_warp d-flex align-items-center">
                         <li>
-                            <a href="#"> <img src="img/icon/bell.svg" alt=""> </a>
+                            <a href="#"> </a>
                         </li>
                         <li>
-                            <a href="#"> <img src="img/icon/msg.svg" alt=""> </a>
+                            <a href="#">  </a>
                         </li>
                     </div>
                     <div class="profile_info">

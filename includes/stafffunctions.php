@@ -2,6 +2,17 @@
 
 function begin($title)
 {
+    session_start();
+    if (!isset($_SESSION['id'])) {
+        echo '<script>window.location.href = "../index.php";</script>';
+    } else {
+        include 'dbcon.php';
+
+        $id = $_SESSION['id'];
+        $sel = mysqli_query($conn, "SELECT * FROM staff WHERE id = '$id'");
+        $row = mysqli_fetch_array($sel);
+    }
+
     echo '<!DOCTYPE html>
     <html lang="zxx">
     

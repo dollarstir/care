@@ -78,6 +78,21 @@
 								<p> Or </p>
 							  <p><a href=""><strong>Forgot password?</strong></a></p><br>
 	                          </form>
+
+							  <form class="ulockd-login-form login">
+	                            <h3><span class="fa fa-lock"></span> Login</h3>
+	                            <p>Enter username and password to login:</p>
+	                            <div class="mb-4">
+	                              <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+	                            </div>
+	                            <div class="mb-4">
+	                              <input type="password" class="form-control" placeholder="Password" name="password">
+	                            </div>
+	                            <button type="submit" class="btn btn-default btn-dark">Login to account</button>
+
+								<p> Or </p>
+							  <p><a href=""><strong>Forgot password?</strong></a></p><br>
+	                          </form>
 							  
 	                        </div>
 	                        

@@ -325,7 +325,7 @@ begin('Home'); ?>
                                                 <div class="amoutn_action d-flex align-items-center">
                                                     $29,192
                                                     <div class="dropdown ms-4">
-                                                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         Action
                                                     </a>
                                                         <div class="dropdown-menu dropdown-menu-right"

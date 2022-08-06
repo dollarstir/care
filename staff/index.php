@@ -91,7 +91,7 @@ begin('Home'); ?>
                         </div>
                     </div>
                     
-                    <div class="col-xl-7">
+                    <div class="col-xl-12">
                         <div class="white_box QA_section card_height_100">
                             <div class="white_box_tittle list_header m-0 align-items-center">
                                 <div class="main-title mb-sm-15">
@@ -345,44 +345,7 @@ begin('Home'); ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-5 ">
-                        <div class="white_box card_height_50 mb_30">
-                            <div class="box_header border_bottom_1px  ">
-                                <div class="main-title">
-                                    <h3 class="mb_25">Total Recover Report</h3>
-                                </div>
-                            </div>
-                            <div id="chart-7"></div>
-                            <div class="row text-center mt-3">
-                                <div class="col-sm-6">
-                                    <h6 class="heading_6 d-block">Last Month</h6>
-                                    <p class="m-0">358</p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h6 class="heading_6 d-block">Current Month</h6>
-                                    <p class="m-0">194</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="white_box card_height_50 mb_30">
-                            <div class="box_header border_bottom_1px  ">
-                                <div class="main-title">
-                                    <h3 class="mb_25">Total Death Report</h3>
-                                </div>
-                            </div>
-                            <div id="chart-8"></div>
-                            <div class="row text-center mt-3">
-                                <div class="col-sm-6">
-                                    <h6 class="heading_6 d-block">Last Month</h6>
-                                    <p class="m-0">358</p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h6 class="heading_6 d-block">Current Month</h6>
-                                    <p class="m-0">194</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-xl-12">
                         <div class="white_box card_height_100">
                             <div class="box_header border_bottom_1px  ">

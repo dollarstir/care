@@ -1,7 +1,7 @@
 <?php
 
 require 'functions.php';
-require '../includes/stafffunctions.php';
+require 'stafffunctions.php';
 if (isset($_GET['action'])) {
     switch ($_GET['action']) {
         case 'login':

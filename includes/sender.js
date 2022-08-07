@@ -204,7 +204,7 @@ $('.support').submit(function(e){
   e.preventDefault();
   
   var staff = {
-      url: 'includes/reciever.php?action=support',
+      url: '../includes/reciever.php?action=support',
       type: 'post',
       data: new FormData(this),
       cache: false,

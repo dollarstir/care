@@ -88,7 +88,7 @@ function begin($title)
                  <span>Records</span>
              </a>
              <ul>
-                 <li><a href="">View Records</a></li>
+                 <li><a href="record.php">View Records</a></li>
                  
              </ul>
          </li>

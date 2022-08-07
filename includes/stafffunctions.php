@@ -98,7 +98,7 @@ function begin($title)
          <li class="">
              <a class="has-arrow" href="#" aria-expanded="false">
                  <img src="img/menu-icon/3.svg" alt="">
-                 <span>Records</span>
+                 <span>Support</span>
              </a>
              <ul>
                  <li><a href="support.php">Contact Support</a></li>

@@ -47,56 +47,7 @@ begin('Support'); ?>
                         </div>
                     </div>
                     
-                    <div class="col-md-6">
-                        <div class="white_box mb_30">
-                            <div class="box_header ">
-                                <div class="main-title">
-                                    <h3 class="mb-0">Input select 3</h3>
-                                </div>
-                            </div>
-                            <select class="default_sel mb_30 w-100">
-                                <option data-display="Select">Nothing</option>
-                                <option value="1">Some option</option>
-                                <option value="2">Another option</option>
-                                <option value="3" disabled>A disabled option</option>
-                                <option value="4">Potato</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="white_box mb_30">
-                            <div class="box_header ">
-                                <div class="main-title">
-                                    <h3 class="mb-0">Input select 4</h3>
-                                </div>
-                            </div>
-                            <select class="default_sel mb_30">
-                                <option data-display="Select">Nothing</option>
-                                <option value="1">Some option</option>
-                                <option value="2">Another option</option>
-                                <option value="3" disabled>A disabled option</option>
-                                <option value="4">Potato</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="white_box mb_30">
-                            <div class="box_header ">
-                                <div class="main-title">
-                                    <h3 class="mb-0">Input select 5</h3>
-                                </div>
-                            </div>
-                            <select class="form-select form-control-lg mb_30">
-                                <option>Large select</option>
-                            </select>
-                            <select class="form-select mb_30">
-                                <option>Default select</option>
-                            </select>
-                            <select class="form-select form-control-sm">
-                                <option>Small select</option>
-                            </select>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -105,8 +56,8 @@ begin('Support'); ?>
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="footer_iner text-center">
-                                <p>2020 © Influence - Designed by <a href="#"> <i class="ti-heart"></i> </a><a href="#">
-                                        Dashboard</a></p>
+                            <p>2020 © Home Assit <a href="#"> <i class="ti-heart"></i> </a><a href="#">
+                                    Staff</a></p>
                             </div>
                         </div>
                     </div>

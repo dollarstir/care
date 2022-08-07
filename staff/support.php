@@ -30,6 +30,18 @@ begin('Support'); ?>
                                     <input type="email" class="form-control" id="exampleFormControlInput1"
                                         placeholder="name@example.com">
                                 </div>
+
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Select option</label>
+                                    <select class="default_sel mb_30 w-100">
+                                        <option data-display="Select">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
                                 
                             </form>
                         </div>

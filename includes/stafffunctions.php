@@ -111,7 +111,7 @@ function staffheader()
                     <i class="ti-menu"></i>
                 </div>
                 <div class="serach_field-area">
-                    Welcome '.$row['name'].'
+                    <h3>Welcome '.$row['name'].'</h3>
                 </div>
                 <div class="header_right d-flex justify-content-between align-items-center">
                     <div class="header_notification_warp d-flex align-items-center">

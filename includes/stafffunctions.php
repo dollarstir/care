@@ -46,7 +46,7 @@ function begin($title)
     
         <link rel="stylesheet" href="css/metisMenu.css">
 
-        <link rel="stylesheet" href="assets/css/sweetalert2.min.css">
+        <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
     
         <link rel="stylesheet" href="css/style1.css" />
         <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">

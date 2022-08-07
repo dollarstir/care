@@ -26,7 +26,7 @@ begin('Support'); ?>
                             </div>
                             <form class="support">
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Email address</label>
+                                    <label class="form-label" for="exampleFormControlInput1">Message</label>
                                     <textarea class="form-control" id="exampleFormControlInput1"
                                         placeholder="enter your message" name="message"></textarea>
                                         <input type="hidden" name="staffid" value="<?php echo $_SESSION['id']; ?>">

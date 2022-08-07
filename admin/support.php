@@ -21,20 +21,27 @@ begin('Support'); ?>
                         <div class="white_box mb_30">
                             <div class="box_header ">
                                 <div class="main-title">
-                                    <h3 class="mb-0">Support form</h3>
+                                    <h3 class="mb-0">Input select 1</h3>
                                 </div>
                             </div>
                             <form>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Email address</label>
-                                    <textarea class="form-control" id="exampleFormControlInput1"
-                                        placeholder="enter your message"></textarea>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com">
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Primary</button>
 
-
-                                
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Select option</label>
+                                    <select class="default_sel mb_30 w-100">
+                                        <option data-display="Select">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
                                 
                             </form>
                         </div>

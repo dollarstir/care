@@ -30,46 +30,11 @@ begin('Support'); ?>
                                     <input type="email" class="form-control" id="exampleFormControlInput1"
                                         placeholder="name@example.com">
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlSelect1">Example select</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlSelect2">Example multiple
-                                        select</label>
-                                    <select multiple class="form-control" id="exampleFormControlSelect2">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
+                                
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="white_box mb_30">
-                            <div class="box_header ">
-                                <div class="main-title">
-                                    <h3 class="mb-0">Input select 2</h3>
-                                </div>
-                            </div>
-                            <select class="nice_Select mb_30">
-                                <option data-display="Select">Nothing</option>
-                                <option value="1">Some option</option>
-                                <option value="2">Another option</option>
-                                <option value="3" disabled>A disabled option</option>
-                                <option value="4">Potato</option>
-                            </select>
-                        </div>
-                    </div>
+                    
                     <div class="col-md-6">
                         <div class="white_box mb_30">
                             <div class="box_header ">

@@ -160,7 +160,7 @@ function support($staffid, $message)
     if (empty(trim($message))) {
         echo 'please enter a message';
     } else {
-        if (mysqli_query($conn, "INSERT INTO support (staffid, message) VALUES ('$staffid', '$message')")) {
+        if (mysqli_query($conn, "INSERT INTO messages (staffid, message) VALUES ('$staffid', '$message')")) {
             echo 'success';
         } else {
             echo 'Failed to send message';

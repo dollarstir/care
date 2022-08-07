@@ -17,6 +17,11 @@ if (isset($_GET['action'])) {
             extract($_POST);
             forgotpass($email);
             break;
+
+        case 'support':
+            extract($_POST);
+            support($staffid, $message);
+            break;
         default:
 
         break;

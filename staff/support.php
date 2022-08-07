@@ -28,7 +28,8 @@ begin('Support'); ?>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Email address</label>
                                     <textarea class="form-control" id="exampleFormControlInput1"
-                                        placeholder="enter your message"></textarea>
+                                        placeholder="enter your message" name="message"></textarea>
+                                        <input type="hidden" name="staffid" value="<?php echo $_SESSION['id']; ?>">
                                 </div>
 
                                 <button type="submit" class="btn btn-primary">Send Message</button>

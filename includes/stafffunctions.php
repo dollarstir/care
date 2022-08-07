@@ -153,3 +153,7 @@ function staffheader()
     </div>
 </div>';
 }
+
+function support($staffid, $message)
+{
+}

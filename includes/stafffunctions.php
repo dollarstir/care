@@ -92,6 +92,17 @@ function begin($title)
                  
              </ul>
          </li>
+
+         <li class="">
+             <a class="has-arrow" href="#" aria-expanded="false">
+                 <img src="img/menu-icon/3.svg" alt="">
+                 <span>Records</span>
+             </a>
+             <ul>
+                 <li><a href="support.php">Contact Support</a></li>
+                 
+             </ul>
+         </li>
          
      </ul>
  </nav>';

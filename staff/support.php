@@ -24,7 +24,7 @@ begin('Support'); ?>
                                     <h3 class="mb-0">Support form</h3>
                                 </div>
                             </div>
-                            <form>
+                            <form class="support">
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Email address</label>
                                     <textarea class="form-control" id="exampleFormControlInput1"

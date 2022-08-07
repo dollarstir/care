@@ -198,6 +198,25 @@ $('.forgotpass').submit(function(e){
   $.ajax(staff);
 });
 
+// staff support via ajax
+$('.support').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: 'includes/reciever.php?action=support',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
 
 
 

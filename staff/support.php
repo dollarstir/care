@@ -31,7 +31,7 @@ begin('Support'); ?>
                                         placeholder="enter your message"></textarea>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Primary</button>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
 
 
                                 

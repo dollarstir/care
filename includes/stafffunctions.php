@@ -167,3 +167,45 @@ function support($staffid, $message)
         }
     }
 }
+
+function listresidencestaff()
+{
+    // fetch all residence from the database  and display them in the table
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, 'SELECT * FROM residence WHERE status = "available"');
+    while ($row = mysqli_fetch_array($sel)) {
+        echo ' <tr>
+        <th scope="row">
+            <div class="patient_thumb d-flex align-items-center">
+                <div class="student_list_img mr_20">
+                    <img src="../upload/'.$row['image'].'" alt="" srcset="">
+                </div>
+                <p>'.$row['name'].'</p>
+            </div>
+        </th>
+        <td>'.$row['address'].'</td>
+        <td>'.$row['medcondition'].'</td>
+        <td>'.$row['howlong'].'</td>
+        <td>'.$row['timetaken'].'</td>
+        <td>'.$row['status'].'</td>
+        
+        <td>
+            <div class="amoutn_action d-flex align-items-center">
+                
+                <div class="dropdown ms-4">
+                    <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
+                        <a class="dropdown-item" href="#">Make request</a>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>';
+    }
+}

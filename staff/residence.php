@@ -31,7 +31,7 @@ begin('Home'); ?>
                                 <div class="main-title mb-sm-15">
                                     <h3 class="m-0 nowrap">Available Residence</h3>
                                 </div>
-                                <div class="box_right d-flex lms_block">
+                                <!-- <div class="box_right d-flex lms_block">
                                     <div class="serach_field-area2">
                                         <div class="search_inner">
                                             <form Active="#">
@@ -42,217 +42,27 @@ begin('Home'); ?>
                                             </form>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="QA_table ">
 
-                                <table class="table lms_table_active2">
+                            <table class="table lms_table_active2">
                                     <thead>
                                         <tr>
-                                            <th scope="col"> Name of Residence</th>
-                                            <th scope="col">Location</th>
-                                            <th scope="col">Appointment Date</th>
+                                            <th scope="col"> Name</th>
+                                            <th scope="col">Address</th>
+                                            <th scope="col">Medical Condition</th>
+                                            <th scope="col">Period</th>
+                                            <th scope="col">Time</th>
+                                            <th scope="col">Status</th>
+                                            
                                             
                                             <th scope="col">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <th scope="row">
-                                                <div class="patient_thumb d-flex align-items-center">
-                                                    <div class="student_list_img mr_20">
-                                                        <img src="img/patient/pataint.png" alt="" srcset="">
-                                                    </div>
-                                                    <p>Jhon Kural</p>
-                                                </div>
-                                            </th>
-                                            <td>Monte Carlo</td>
-                                            <td>11/03/2020</td>
-                                            
-                                            <td>
-                                                <div class="amoutn_action d-flex align-items-center">
-                                                    
-                                                    <div class="dropdown ms-4">
-                                                        <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Action
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right"
-                                                            aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">Request schedule</a>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <div class="patient_thumb d-flex align-items-center">
-                                                    <div class="student_list_img mr_20">
-                                                        <img src="img/patient/2.png" alt="" srcset="">
-                                                    </div>
-                                                    <p>Jhon Kural</p>
-                                                </div>
-                                            </th>
-                                            <td>Monte Carlo</td>
-                                            <td>11/03/2020</td>
-                                            
-                                            <td>
-                                                <div class="amoutn_action d-flex align-items-center">
-                                                    
-                                                    <div class="dropdown ms-4">
-                                                        <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Action
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right"
-                                                            aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">Request schedule</a>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <div class="patient_thumb d-flex align-items-center">
-                                                    <div class="student_list_img mr_20">
-                                                        <img src="img/patient/3.png" alt="" srcset="">
-                                                    </div>
-                                                    <p>Jhon Kural</p>
-                                                </div>
-                                            </th>
-                                            <td>Monte Carlo</td>
-                                            <td>11/03/2020</td>
-                                            
-                                            <td>
-                                                <div class="amoutn_action d-flex align-items-center">
-                                                    
-                                                    <div class="dropdown ms-4">
-                                                        <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Action
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right"
-                                                            aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">Request schedule</a>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <div class="patient_thumb d-flex align-items-center">
-                                                    <div class="student_list_img mr_20">
-                                                        <img src="img/patient/4.png" alt="" srcset="">
-                                                    </div>
-                                                    <p>Jhon Kural</p>
-                                                </div>
-                                            </th>
-                                            <td>Monte Carlo</td>
-                                            <td>11/03/2020</td>
-                                            
-                                            <td>
-                                                <div class="amoutn_action d-flex align-items-center">
-                                                    
-                                                    <div class="dropdown ms-4">
-                                                        <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Action
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right"
-                                                            aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">Request schedule</a>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <div class="patient_thumb d-flex align-items-center">
-                                                    <div class="student_list_img mr_20">
-                                                        <img src="img/patient/5.png" alt="" srcset="">
-                                                    </div>
-                                                    <p>Jhon Kural</p>
-                                                </div>
-                                            </th>
-                                            <td>Monte Carlo</td>
-                                            <td>11/03/2020</td>
-                                            
-                                            <td>
-                                                <div class="amoutn_action d-flex align-items-center">
-                                                    
-                                                    <div class="dropdown ms-4">
-                                                        <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Action
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right"
-                                                            aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">Request schedule</a>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <div class="patient_thumb d-flex align-items-center">
-                                                    <div class="student_list_img mr_20">
-                                                        <img src="img/patient/6.png" alt="" srcset="">
-                                                    </div>
-                                                    <p>Jhon Kural</p>
-                                                </div>
-                                            </th>
-                                            <td>Monte Carlo</td>
-                                            <td>11/03/2020</td>
-                                            
-                                            <td>
-                                                <div class="amoutn_action d-flex align-items-center">
-                                                    
-                                                    <div class="dropdown ms-4">
-                                                        <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Action
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right"
-                                                            aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">Request schedule</a>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">
-                                                <div class="patient_thumb d-flex align-items-center">
-                                                    <div class="student_list_img mr_20">
-                                                        <img src="img/patient/6.png" alt="" srcset="">
-                                                    </div>
-                                                    <p>Jhon Kural</p>
-                                                </div>
-                                            </th>
-                                            <td>Monte Carlo</td>
-                                            <td>11/03/2020</td>
-                                            
-                                            <td>
-                                                <div class="amoutn_action d-flex align-items-center">
-                                                    
-                                                    <div class="dropdown ms-4">
-                                                        <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                            Action
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right"
-                                                            aria-labelledby="dropdownMenuLink">
-                                                            <a class="dropdown-item" href="#">Request schedule</a>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                       <?php listresidencestaff(); ?>
+                                        
                                     </tbody>
                                 </table>
                             </div>

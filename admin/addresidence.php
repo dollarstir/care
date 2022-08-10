@@ -21,10 +21,56 @@ begin1('Add Residence'); ?>
                         <div class="white_box mb_30">
                             <div class="box_header ">
                                 <div class="main-title">
-                                    <h3 class="mb-0">Input select 1</h3>
+                                    <h3 class="mb-0">Add Residence</h3>
                                 </div>
                             </div>
                             <form>
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="name">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Residence Address</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="address">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Link to location on Map</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="map">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Name</label>
+                                    <input type="date" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="dob">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Select Gender</label>
+                                    <select class="default_sel mb_30 w-100" name="gender">
+                                        <option value="">Select gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="">
+                                </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Email address</label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1"

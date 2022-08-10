@@ -252,11 +252,16 @@ function workhistory()
                     </a>
                     <div class="dropdown-menu dropdown-menu-right"
                         aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
-                        '.($row['status'] == 'approved') ? '<a class="dropdown-item" href="#">Make as Complete</a>' : ''.'
-                        
+                        <a class="dropdown-item" href="'.$row2['maplink'].'" target="blank">View on map</a>';
+        if ($row['status'] == 'approved') {
+            echo '<a class="dropdown-item" href="completetask.php?id='.$row['id'].'">Click to complete</a>
+            <a class="dropdown-item" href="completetask.php?id='.$row['id'].'">View Patients Records</a>
+            ';
+        } elseif ($row['status'] == 'pending') {
+            echo '<a class="dropdown-item" href="deleterequest.php?id='.$row['id'].'">Cancel Request</a>';
+        }
 
-                    </div>
+        echo '</div>
                 </div>
             </div>
         </td>';

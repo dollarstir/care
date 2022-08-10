@@ -52,6 +52,8 @@ begin1('Home'); ?>
                                             <th scope="col"> Name</th>
                                             <th scope="col">Address</th>
                                             <th scope="col">Medical Condition</th>
+                                            <th scope="col">Period</th>
+                                            <th scope="col">Time</th>
                                             
                                             
                                             <th scope="col">Action</th>

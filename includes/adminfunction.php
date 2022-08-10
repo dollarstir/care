@@ -342,6 +342,8 @@ function listresidence()
         </th>
         <td>'.$row['address'].'</td>
         <td>'.$row['medcondition'].'</td>
+        <td>'.$row['howlong'].'</td>
+        <td>'.$row['timetaken'].'</td>
         
         <td>
             <div class="amoutn_action d-flex align-items-center">

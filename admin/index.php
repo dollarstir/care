@@ -28,8 +28,8 @@ begin1('Home'); ?>
                                                     <img src="img/icon/man.svg" alt="">
                                                 </div>
                                                 <div class="count_content">
-                                                    <h3><span class="counter">100</span> </h3>
-                                                    <p>Available Residence</p>
+                                                    <h3><span class="counter"><?php echo countall('residence'); ?></span> </h3>
+                                                    <p>All Residence</p>
                                                 </div>
                                             </div>
                                             <div class="single_quick_activity d-flex">

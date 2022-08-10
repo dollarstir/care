@@ -1,6 +1,6 @@
 <?php
 
-function begin($title)
+function begin1($title)
 {
     session_start();
     if (!isset($_SESSION['id'])) {
@@ -54,7 +54,7 @@ function begin($title)
 }
 // Staff Sidebar
 
- function staffsidebar()
+ function adminsidebar()
  {
      echo '<nav class="sidebar">
      <div class="logo d-flex justify-content-between">
@@ -109,7 +109,7 @@ function begin($title)
      </ul>
  </nav>';
  }
-function staffheader()
+function adminheader()
 {
     include 'dbcon.php';
 

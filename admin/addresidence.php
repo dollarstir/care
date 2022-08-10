@@ -24,7 +24,7 @@ begin1('Add Residence'); ?>
                                     <h3 class="mb-0">Add Residence</h3>
                                 </div>
                             </div>
-                            <form>
+                            <form class="addresidence">
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Name</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
@@ -75,6 +75,23 @@ begin1('Add Residence'); ?>
                                     <label class="form-label" for="exampleFormControlInput1">Upload Residnce Picture</label>
                                     <input type="file" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="image">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Period</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="period">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Time (From) </label>
+                                    <input type="time" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="from">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Time (To) </label>
+                                    <input type="time" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="to">
                                 </div>
                                 
 

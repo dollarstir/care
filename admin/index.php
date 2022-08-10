@@ -48,7 +48,7 @@ begin1('Home'); ?>
                                                 </div>
                                                 <div class="count_content">
                                                     <h3><span class="counter">20</span> </h3>
-                                                    <p>Worked on</p>
+                                                    <p>Residence Under treatment</p>
                                                 </div>
                                             </div>
                                             

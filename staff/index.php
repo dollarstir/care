@@ -28,7 +28,7 @@ begin('Home'); ?>
                                                     <img src="img/icon/man.svg" alt="">
                                                 </div>
                                                 <div class="count_content">
-                                                    <h3><span class="counter">100</span> </h3>
+                                                    <h3><span class="counter"><?php echo availableresidencestaff(); ?></span> </h3>
                                                     <p>Available Residence</p>
                                                 </div>
                                             </div>
@@ -49,7 +49,7 @@ begin('Home'); ?>
                         </div>
                     </div>
                     
-                    <div class="col-xl-12">
+                    <!-- <div class="col-xl-12">
                         <div class="white_box QA_section card_height_100">
                             <div class="white_box_tittle list_header m-0 align-items-center">
                                 <div class="main-title mb-sm-15">
@@ -281,9 +281,9 @@ begin('Home'); ?>
                                 </table>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col-xl-12">
+                    <!-- <div class="col-xl-12">
                         <div class="white_box QA_section card_height_100">
                             <div class="white_box_tittle list_header m-0 align-items-center">
                                 <div class="main-title mb-sm-15">
@@ -515,7 +515,7 @@ begin('Home'); ?>
                                 </table>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     
                     
                     

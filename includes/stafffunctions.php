@@ -209,3 +209,56 @@ function listresidencestaff()
     </tr>';
     }
 }
+
+function availableresidencestaff()
+{
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, "SELECT * FROM residence WHERE status = 'available'");
+    $count = mysqli_num_rows($sel);
+
+    return $count;
+}
+
+function workhistory()
+{
+    // session_start();
+    $id = $_SESSION['id'];
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, "SELECT * FROM records WHERE staffid = '$id'");
+    while ($row = mysqli_fetch_array($sel)) {
+        $sel2 = mysqli_query($conn, "SELECT * FROM residence WHERE id = '$row[residenceid]'");
+        $row2 = mysqli_fetch_array($sel2);
+        echo '<tr>
+        <th scope="row">
+            <div class="patient_thumb d-flex align-items-center">
+                <div class="student_list_img mr_20">
+                    <img src="../upload/'.$row2['image'].'" alt="" srcset="">
+                </div>
+                <p>'.$row2['name'].'</p>
+            </div>
+        </th>
+        <td>'.$row2['address'].'</td>
+        <td>'.$row['requestdate'].'</td>
+        <td>'.$row['approvaldate'].'</td>
+        <td>'.$row['datecompleted'].'</td>
+        <td>'.$row['status'].'</td>
+        
+        <td>
+            <div class="amoutn_action d-flex align-items-center">
+                
+                <div class="dropdown ms-4">
+                    <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
+                        '.($row['status'] == 'approved') ? '<a class="dropdown-item" href="#">Make as Complete</a>' : ''.'
+                        
+
+                    </div>
+                </div>
+            </div>
+        </td>';
+    }
+}

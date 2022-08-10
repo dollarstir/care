@@ -1,18 +1,18 @@
 <?php
 include '../includes/adminfunction.php';
 
-begin('Add Stuff'); ?>
+begin1('Add Stuff'); ?>
 
 <body class="crm_body_bg">
 
 
 
-<?php staffsidebar(); ?>
+<?php adminsidebar(); ?>
 
 
     <section class="main_content dashboard_part">
 
-    <?php staffheader(); ?>
+    <?php adminheader(); ?>
 
         <div class="main_content_iner ">
             <div class="container-fluid p-0">

@@ -25,6 +25,8 @@ if (isset($_GET['action'])) {
             break;
 
         case 'adminlogin':
+            extract($_POST);
+            adminlogin($email, $password);
             break;
         default:
 

@@ -354,6 +354,7 @@ function listresidence()
                     </a>
                     <div class="dropdown-menu dropdown-menu-right"
                         aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
                         <a class="dropdown-item" href="#">Edit</a>
                         <a class="dropdown-item" href="deleteresidence.php?id='.$row['id'].'">Delete</a>
 

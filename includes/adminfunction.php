@@ -277,8 +277,9 @@ function liststaff()
                 <td>'.$row['email'].'</td>
                 <td>'.$row['phone'].'</td>
                 <td>'.$row['dob'].'</td>
+                <td>'.$row['datejoined'].'</td>
+                
                 <td>
-                    '.$row['datejoined'].'
                     <div class="amoutn_action d-flex align-items-center">
                                                         
                         <div class="dropdown ms-4">
@@ -293,12 +294,8 @@ function liststaff()
                             </div>
                         </div>
                     </div>
-                
-                
-                
+
                 </td>
-                
-                
                 
                 
             </tr>';

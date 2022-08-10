@@ -66,9 +66,15 @@ begin1('Add Residence'); ?>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Name</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="">
+                                    <label class="form-label" for="exampleFormControlInput1">Upload Past Record</label>
+                                    <input type="file" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="pastrecord">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Upload Residnce Picture</label>
+                                    <input type="file" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="image">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Email address</label>

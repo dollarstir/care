@@ -68,7 +68,7 @@
                                             <h5 class="modal-title">Log in</h5>
                                         </div>
                                         <div class="modal-body">
-                                            <form class="login">
+                                            <form class="adminlogin">
                                                 
                                                 
                                                 <div class="">

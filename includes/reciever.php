@@ -23,6 +23,9 @@ if (isset($_GET['action'])) {
             extract($_POST);
             support($staffid, $message);
             break;
+
+        case 'adminlogin':
+            break;
         default:
 
         break;

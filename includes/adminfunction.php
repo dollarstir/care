@@ -153,3 +153,23 @@ function staffheader()
     </div>
 </div>';
 }
+
+function adminlogin($email, $password)
+{
+    include 'dbcon.php';
+    $email = mysqli_real_escape_string($conn, $email);
+    $password = md5(mysqli_real_escape_string($conn, $password));
+    if (empty(trim($email)) || empty(trim($password))) {
+        echo 'Login details cannot be empty';
+    } else {
+        $sel = mysqli_query($conn, "SELECT * FROM admin WHERE email = '$email' AND password ='$password'");
+        if (mysqli_num_rows($sel) >= 1) {
+            $row = mysqli_fetch_array($sel);
+            session_start();
+            $_SESSION['admin'] = $row;
+            echo 'loginsuccess1';
+        } else {
+            echo 'Login details not corerct';
+        }
+    }
+}

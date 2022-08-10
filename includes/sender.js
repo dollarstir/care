@@ -60,6 +60,23 @@ $(function(){
 
         }
 
+        else if(response == 'Registration successful'){
+
+          swal({
+              title: "Success!",
+              text: "Registration successful",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
+
         else if(response == 'loginsuccess'){
 
             swal({
@@ -205,6 +222,25 @@ $('.support').submit(function(e){
   
   var staff = {
       url: '../includes/reciever.php?action=support',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+// admin login with Ajax 
+$('.adminlogin').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: '../includes/reciever.php?action=adminlogin',
       type: 'post',
       data: new FormData(this),
       cache: false,

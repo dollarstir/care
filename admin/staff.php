@@ -58,7 +58,7 @@ begin1('Staff'); ?>
                                             <th scope="col">joined</th>
                                            
                                             
-                                            <th scope="col">Action</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>

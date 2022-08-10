@@ -32,6 +32,11 @@ if (isset($_GET['action'])) {
             extract($_POST);
             addstaff($name, $email, $phone, $dob, $password, $repass);
             break;
+        case 'addresidence':
+            extract($_POST);
+            $time = $from.' - '.$to;
+            addresidence($name, $address, $map, $dob, $gender, $medcondition, $period, $time);
+            break;
         default:
 
         break;

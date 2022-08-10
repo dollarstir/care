@@ -291,6 +291,26 @@ $('.addstaff').submit(function(e){
 });
 
 
+// add resident via ajax
+$('.addresidence').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: '../includes/reciever.php?action=addresidence',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+
 
 
 

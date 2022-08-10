@@ -539,7 +539,7 @@ begin1('Home'); ?>
                     <div class="col-lg-12">
                         <div class="footer_iner text-center">
                             <p>2020 © Home Assit <a href="#"> <i class="ti-heart"></i> </a><a href="#">
-                                    Staff</a></p>
+                                    Admin</a></p>
                         </div>
                     </div>
                 </div>

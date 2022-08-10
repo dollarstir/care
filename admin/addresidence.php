@@ -55,8 +55,7 @@ begin1('Add Residence'); ?>
                                         <option value="">Select gender</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
-                                        <option value="3" disabled>A disabled option</option>
-                                        <option value="4">Potato</option>
+                                        
                                     </select>
                                 </div>
 

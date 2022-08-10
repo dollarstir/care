@@ -59,7 +59,7 @@ begin1('Home'); ?>
                         </div>
                     </div>
                     
-                    <div class="col-xl-12">
+                    <!-- <div class="col-xl-12">
                         <div class="white_box QA_section card_height_100">
                             <div class="white_box_tittle list_header m-0 align-items-center">
                                 <div class="main-title mb-sm-15">
@@ -291,9 +291,9 @@ begin1('Home'); ?>
                                 </table>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="col-xl-12">
+                    <!-- <div class="col-xl-12">
                         <div class="white_box QA_section card_height_100">
                             <div class="white_box_tittle list_header m-0 align-items-center">
                                 <div class="main-title mb-sm-15">
@@ -525,7 +525,7 @@ begin1('Home'); ?>
                                 </table>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     
                     
                     

@@ -47,7 +47,7 @@ begin1('Home'); ?>
                                                     <img src="img/icon/cap.svg" alt="">
                                                 </div>
                                                 <div class="count_content">
-                                                    <h3><span class="counter">20</span> </h3>
+                                                    <h3><span class="counter"><?php undertreatment(); ?></span> </h3>
                                                     <p>Residence Under treatment</p>
                                                 </div>
                                             </div>

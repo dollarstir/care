@@ -191,3 +191,12 @@ function availableresidence()
 
     return $count;
 }
+
+function undertreatment()
+{
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, "SELECT * FROM residence WHERE status = 'undertreatment'");
+    $count = mysqli_num_rows($sel);
+
+    return $count;
+}

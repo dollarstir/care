@@ -80,6 +80,7 @@ function begin1($title)
                  <span>Residence</span>
              </a>
              <ul>
+             <li><a href="addresidence.php">Add Residence</a></li>
                  <li><a href="residence.php">Available Residence</a></li>
                  
              </ul>
@@ -90,6 +91,7 @@ function begin1($title)
                  <span>Records</span>
              </a>
              <ul>
+                 
                  <li><a href="record.php">View Records</a></li>
                  
              </ul>

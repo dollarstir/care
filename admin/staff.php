@@ -56,7 +56,7 @@ begin1('Staff'); ?>
                                             <th scope="col">Phone</th>
                                             <th scope="col">Dob</th>
                                             <th scope="col">joined</th>
-                                            <th scope="col">Status</th>
+                                           
                                             
                                             <th scope="col">Action</th>
                                         </tr>

@@ -278,17 +278,24 @@ function liststaff()
                 <td>'.$row['phone'].'</td>
                 <td>'.$row['dob'].'</td>
                 <td>'.$row['datejoined'].'</td>
-                <td>'.$row['status'].'</td>
+                
                 <td>
-                    <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                            <i class="ti-settings"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="editstaff.php?id='.$row['id'].'">Edit</a>
-                            <a class="dropdown-item" href="deletestaff.php?id='.$row['id'].'">Delete</a>
+                    <div class="amoutn_action d-flex align-items-center">
+                                                        
+                        <div class="dropdown ms-4">
+                            <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Action
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right"
+                                aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="editstaff.php?id='.$row['id'].'">Edit Staff</a>
+                                <a class="dropdown-item" href="deletestaff.php?id='.$row['id'].'">Delete</a>
+
+                            </div>
                         </div>
                     </div>
+
+                </td>
                 
                 
             </tr>';

@@ -113,8 +113,8 @@ function adminheader()
 {
     include 'dbcon.php';
 
-    $id = $_SESSION['id'];
-    $sel = mysqli_query($conn, "SELECT * FROM staff WHERE id = '$id'");
+    $id = $_SESSION['admin']['id'];
+    $sel = mysqli_query($conn, "SELECT * FROM admin WHERE id = '$id'");
     $row = mysqli_fetch_array($sel);
     echo '<div class="container-fluid g-0">
     <div class="row">
@@ -172,4 +172,13 @@ function adminlogin($email, $password)
             echo 'Login details not corerct';
         }
     }
+}
+
+function countall($table)
+{
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, "SELECT * FROM $table");
+    $count = mysqli_num_rows($sel);
+
+    return $count;
 }

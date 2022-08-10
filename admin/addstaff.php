@@ -51,15 +51,17 @@ begin1('Add Stuff'); ?>
                                         placeholder="" name="image">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1"></label>
+                                    <label class="form-label" for="exampleFormControlInput1">New Password</label>
                                     <input type="password" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="password">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1"></label>
+                                    <label class="form-label" for="exampleFormControlInput1"> Re-enter password</label>
                                     <input type="password" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="repass">
                                 </div>
+
+                                <button type="submit" class="btn btn-primary">Save</button>
                                 
 
 

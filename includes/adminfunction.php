@@ -239,7 +239,7 @@ function addstaff($name, $email, $phone, $dob, $password, $repass)
                             move_uploaded_file($image_tmp, $image_destination);
                             $password = md5(mysqli_real_escape_string($conn, $password));
                             $datejoined = date('jS F, Y');
-                            $name = $fname.' '.$lname;
+                            // $name = $fname.' '.$lname;
                             $insert = mysqli_query($conn, "INSERT INTO staff (name,email,phone,dob,pic,password,datejoined) VALUES ('$name','$email','$phone','$dob','$image_name_new','$password','$datejoined')");
                             if ($insert) {
                                 echo 'Registration successful';
@@ -255,6 +255,41 @@ function addstaff($name, $email, $phone, $dob, $password, $repass)
                 } else {
                     echo 'Image type is not allowed';
                 }
+            }
+        }
+
+        function liststaff()
+        {
+            include 'dbcon.php';
+            $sel = mysqli_query($conn, 'SELECT * FROM staff');
+            while ($row = mysqli_fetch_array($sel)) {
+                echo '<tr>
+                <td>'.$row['id'].'</td>
+                <td><div class="patient_thumb d-flex align-items-center">
+                    <div class="student_list_img mr_20">
+                        <img src="../upload/'.$row['pic'].'" alt="" srcset="">
+                    </div>
+                    <p>'.$row['name'].'</p>
+                    </div>
+                </td>
+                <td>'.$row['email'].'</td>
+                <td>'.$row['phone'].'</td>
+                <td>'.$row['dob'].'</td>
+                <td>'.$row['datejoined'].'</td>
+                <td>'.$row['status'].'</td>
+                <td>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                            <i class="ti-settings"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="editstaff.php?id='.$row['id'].'">Edit</a>
+                            <a class="dropdown-item" href="deletestaff.php?id='.$row['id'].'">Delete</a>
+                        </div>
+                    </div>
+                
+                
+            </tr>';
             }
         }
     }

@@ -311,7 +311,8 @@ function addresidence($name, $address, $map, $dob, $gender, $medcondition, $peri
     $pastrecord = $_FILES['pastrecord']['name'];
     $tempname1 = $_FILES['pastrecord']['tmp_name'];
     $folder1 = '../upload/'.$pastrecord;
-    if (move_uploaded_file($tempname, $filename) && move_uploaded_file($tempname1, $pastrecord)) {
+    if (move_uploaded_file($tempname, $folder) && move_uploaded_file($tempname1, $folder1)) {
+        $dateadded = date('jS F, Y');
         $insert = mysqli_query($conn, "INSERT INTO residence (name,image,address,map,dob,gender,medcondition,pastrecord,period,time,status,dateadded); VALUES ('$name','$filename','$address','$map','$dob','$gender','$medcondition','$pastrecord','$period','$time','available','$dateadded')");
         if ($insert) {
             echo 'success';

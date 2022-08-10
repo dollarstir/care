@@ -301,3 +301,24 @@ function liststaff()
             </tr>';
     }
 }
+
+function addresidence($name, $address, $map, $dob, $gender, $medcondition, $period, $time)
+{
+    include 'dbcon.php';
+    $filename = $_FILES['image']['name'];
+    $tempname = $_FILES['image']['tmp_name'];
+    $folder = '../upload/'.$filename;
+    $pastrecord = $_FILES['pastrecord']['name'];
+    $tempname1 = $_FILES['pastrecord']['tmp_name'];
+    $folder1 = '../upload/'.$pastrecord;
+    if (move_uploaded_file($tempname, $filename) && move_uploaded_file($tempname1, $pastrecord)) {
+        $insert = mysqli_query($conn, "INSERT INTO residence (name,image,address,map,dob,gender,medcondition,pastrecord,period,time,status,dateadded); VALUES ('$name','$filename','$address','$map','$dob','$gender','$medcondition','$pastrecord','$period','$time','available','$dateadded')");
+        if ($insert) {
+            echo 'success';
+        } else {
+            echo 'Residence failed to add';
+        }
+    } else {
+        echo 'failed to upload';
+    }
+}

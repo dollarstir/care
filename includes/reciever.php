@@ -2,6 +2,7 @@
 
 require 'functions.php';
 require 'stafffunctions.php';
+require 'adminfunction.php';
 if (isset($_GET['action'])) {
     switch ($_GET['action']) {
         case 'login':

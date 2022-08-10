@@ -81,7 +81,7 @@ function begin1($title)
              </a>
              <ul>
              <li><a href="addresidence.php">Add Residence</a></li>
-                 <li><a href="residence.php">Available Residence</a></li>
+                 <li><a href="residence.php">View Residence</a></li>
                  
              </ul>
          </li>
@@ -322,5 +322,43 @@ function addresidence($name, $address, $map, $dob, $gender, $medcondition, $peri
         }
     } else {
         echo 'failed to upload';
+    }
+}
+
+function listresidence()
+{
+    // fetch all residence from the database  and display them in the table
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, 'SELECT * FROM residence');
+    while ($row = mysqli_fetch_array($sel)) {
+        echo ' <tr>
+        <th scope="row">
+            <div class="patient_thumb d-flex align-items-center">
+                <div class="student_list_img mr_20">
+                    <img src="../upload/'.$row['image'].'" alt="" srcset="">
+                </div>
+                <p>'.$row['name'].'</p>
+            </div>
+        </th>
+        <td>'.$row['address'].'</td>
+        <td>'.$row['medcondition'].'</td>
+        
+        <td>
+            <div class="amoutn_action d-flex align-items-center">
+                
+                <div class="dropdown ms-4">
+                    <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Edit</a>
+                        <a class="dropdown-item" href="deleteresidence.php?id='.$row['id'].'">Delete</a>
+
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>';
     }
 }

@@ -28,6 +28,10 @@ if (isset($_GET['action'])) {
             extract($_POST);
             adminlogin($email, $password);
             break;
+        case 'addstaff':
+            extract($_POST);
+            addstaff($name, $email, $phone, $dob, $password, $repass);
+            break;
         default:
 
         break;

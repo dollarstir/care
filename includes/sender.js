@@ -271,6 +271,26 @@ $('.adminlogin').submit(function(e){
 });
 
 
+// adding staff via ajax
+$('.addstaff').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: '../includes/reciever.php?action=addstaff',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+
 
 
 

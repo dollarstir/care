@@ -24,7 +24,7 @@ begin1('Add Stuff'); ?>
                                     <h3 class="mb-0">Add Staff</h3>
                                 </div>
                             </div>
-                            <form>
+                            <form class="addstaff">
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Name</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"

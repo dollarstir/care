@@ -21,18 +21,49 @@ begin1('Add Stuff'); ?>
                         <div class="white_box mb_30">
                             <div class="box_header ">
                                 <div class="main-title">
-                                    <h3 class="mb-0">Input select 1</h3>
+                                    <h3 class="mb-0">Add Staff</h3>
                                 </div>
                             </div>
                             <form>
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="name@example.com">
+                                    <label class="form-label" for="exampleFormControlInput1">Name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="name">
                                 </div>
-
-
                                 <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Phone</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Date of Birth</label>
+                                    <input type="date" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="dob">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Profile Picture</label>
+                                    <input type="file" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="image">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1"></label>
+                                    <input type="password" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="password">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1"></label>
+                                    <input type="password" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="repass">
+                                </div>
+                                
+
+
+                                <!-- <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Select option</label>
                                     <select class="default_sel mb_30 w-100">
                                         <option data-display="Select">Nothing</option>
@@ -41,7 +72,7 @@ begin1('Add Stuff'); ?>
                                         <option value="3" disabled>A disabled option</option>
                                         <option value="4">Potato</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 
                             </form>
                         </div>

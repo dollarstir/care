@@ -37,6 +37,16 @@ begin1('Home'); ?>
                                                     <img src="img/icon/cap.svg" alt="">
                                                 </div>
                                                 <div class="count_content">
+                                                    <h3><span class="counter"><?php echo availableresidence(); ?></span> </h3>
+                                                    <p>Available Residence</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="single_quick_activity d-flex">
+                                                <div class="icon">
+                                                    <img src="img/icon/cap.svg" alt="">
+                                                </div>
+                                                <div class="count_content">
                                                     <h3><span class="counter">20</span> </h3>
                                                     <p>Worked on</p>
                                                 </div>

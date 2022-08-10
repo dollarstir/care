@@ -182,3 +182,12 @@ function countall($table)
 
     return $count;
 }
+
+function availableresidence()
+{
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, "SELECT * FROM residence WHERE status = 'available'");
+    $count = mysqli_num_rows($sel);
+
+    return $count;
+}

@@ -1,7 +1,4 @@
-<?php
-include '../includes/adminfunction.php';
 
- ?>
 
 <!DOCTYPE html>
     <html lang="zxx">

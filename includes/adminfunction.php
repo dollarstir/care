@@ -257,13 +257,15 @@ function addstaff($name, $email, $phone, $dob, $password, $repass)
                 }
             }
         }
+    }
+}
 
-        function liststaff()
-        {
-            include 'dbcon.php';
-            $sel = mysqli_query($conn, 'SELECT * FROM staff');
-            while ($row = mysqli_fetch_array($sel)) {
-                echo '<tr>
+function liststaff()
+{
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, 'SELECT * FROM staff');
+    while ($row = mysqli_fetch_array($sel)) {
+        echo '<tr>
                 <td>'.$row['id'].'</td>
                 <td><div class="patient_thumb d-flex align-items-center">
                     <div class="student_list_img mr_20">
@@ -290,7 +292,5 @@ function addstaff($name, $email, $phone, $dob, $password, $repass)
                 
                 
             </tr>';
-            }
-        }
     }
 }

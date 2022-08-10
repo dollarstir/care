@@ -29,9 +29,9 @@ begin1('Home'); ?>
                         <div class="white_box QA_section card_height_100">
                             <div class="white_box_tittle list_header m-0 align-items-center">
                                 <div class="main-title mb-sm-15">
-                                    <h3 class="m-0 nowrap">Available Residence</h3>
+                                    <h3 class="m-0 nowrap">Residence</h3>
                                 </div>
-                                <div class="box_right d-flex lms_block">
+                                <!-- <div class="box_right d-flex lms_block">
                                     <div class="serach_field-area2">
                                         <div class="search_inner">
                                             <form Active="#">
@@ -42,16 +42,17 @@ begin1('Home'); ?>
                                             </form>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="QA_table ">
 
                                 <table class="table lms_table_active2">
                                     <thead>
                                         <tr>
-                                            <th scope="col"> Name of Residence</th>
-                                            <th scope="col">Location</th>
-                                            <th scope="col">Appointment Date</th>
+                                            <th scope="col"> Name</th>
+                                            <th scope="col">Address</th>
+                                            <th scope="col">Medical Condition</th>
+                                            
                                             
                                             <th scope="col">Action</th>
                                         </tr>

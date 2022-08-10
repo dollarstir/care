@@ -44,7 +44,7 @@ begin1('Add Residence'); ?>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Name</label>
+                                    <label class="form-label" for="exampleFormControlInput1">Date of Birth</label>
                                     <input type="date" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="dob">
                                 </div>

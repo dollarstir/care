@@ -1,7 +1,7 @@
 <?php
 include '../includes/adminfunction.php';
 
-begin1('Home'); ?>
+begin1('Staff'); ?>
 
 <body class="crm_body_bg">
 

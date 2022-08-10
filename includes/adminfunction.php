@@ -95,18 +95,19 @@ function begin1($title)
                  <li><a href="record.php">View Records</a></li>
                  
              </ul>
-         </li>
+             </li>
+             <li class="">
+                 <a class="has-arrow" href="#" aria-expanded="false">
+                     <img src="img/menu-icon/3.svg" alt="">
+                     <span>Staff</span>
+                 </a>
+                 <ul>
+                     <li><a href="addstaff.php">Add Staff</a></li>
+                     <li><a href="staff.php">View Staff</a></li>
+                     
+                 </ul>
+             </li>
 
-         <li class="">
-             <a class="has-arrow" href="#" aria-expanded="false">
-                 <img src="img/menu-icon/3.svg" alt="">
-                 <span>Support</span>
-             </a>
-             <ul>
-                 <li><a href="support.php">Contact Support</a></li>
-                 
-             </ul>
-         </li>
          
      </ul>
  </nav>';

@@ -108,6 +108,8 @@ begin('Support'); ?>
     <script src="vendors/apex_chart/apexcharts.js"></script>
 
     <script src="js/custom.js"></script>
+    <script src="../assets/js/sweetalert2.all.min.js"></script>
+    <script src="../includes/sender.js"></script>
 </body>
 
 </html>

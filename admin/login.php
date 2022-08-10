@@ -98,48 +98,48 @@ include '../includes/adminfunction.php';
 
 
 
-    <script src="back/js/jquery1-3.4.1.min.js"></script>
+    <script src="js/jquery1-3.4.1.min.js"></script>
 
-    <script src="back/js/popper1.min.js"></script>
+    <script src="js/popper1.min.js"></script>
 
-    <script src="back/js/bootstrap1.min.js"></script>
+    <script src="js/bootstrap1.min.js"></script>
 
-    <script src="back/js/metisMenu.js"></script>
+    <script src="js/metisMenu.js"></script>
 
-    <script src="back/vendors/count_up/jquery.waypoints.min.js"></script>
+    <script src="vendors/count_up/jquery.waypoints.min.js"></script>
 
-    <script src="back/vendors/chartlist/Chart.min.js"></script>
+    <script src="vendors/chartlist/Chart.min.js"></script>
 
-    <script src="back/vendors/count_up/jquery.counterup.min.js"></script>
+    <script src="vendors/count_up/jquery.counterup.min.js"></script>
 
-    <script src="back/vendors/swiper_slider/js/swiper.min.js"></script>
+    <script src="vendors/swiper_slider/js/swiper.min.js"></script>
 
-    <script src="back/vendors/niceselect/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/niceselect/js/jquery.nice-select.min.js"></script>
 
-    <script src="back/vendors/owl_carousel/js/owl.carousel.min.js"></script>
+    <script src="vendors/owl_carousel/js/owl.carousel.min.js"></script>
 
-    <script src="back/vendors/gijgo/gijgo.min.js"></script>
+    <script src="vendors/gijgo/gijgo.min.js"></script>
 
-    <script src="back/vendors/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="back/vendors/datatable/js/dataTables.responsive.min.js"></script>
-    <script src="back/vendors/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="back/vendors/datatable/js/buttons.flash.min.js"></script>
-    <script src="back/vendors/datatable/js/jszip.min.js"></script>
-    <script src="back/vendors/datatable/js/pdfmake.min.js"></script>
-    <script src="back/vendors/datatable/js/vfs_fonts.js"></script>
-    <script src="back/vendors/datatable/js/buttons.html5.min.js"></script>
-    <script src="back/vendors/datatable/js/buttons.print.min.js"></script>
-    <script src="back/js/chart.min.js"></script>
+    <script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
+    <script src="vendors/datatable/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatable/js/buttons.flash.min.js"></script>
+    <script src="vendors/datatable/js/jszip.min.js"></script>
+    <script src="vendors/datatable/js/pdfmake.min.js"></script>
+    <script src="vendors/datatable/js/vfs_fonts.js"></script>
+    <script src="vendors/datatable/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatable/js/buttons.print.min.js"></script>
+    <script src="js/chart.min.js"></script>
 
-    <script src="back/vendors/progressbar/jquery.barfiller.js"></script>
+    <script src="vendors/progressbar/jquery.barfiller.js"></script>
 
-    <script src="back/vendors/tagsinput/tagsinput.js"></script>
+    <script src="vendors/tagsinput/tagsinput.js"></script>
 
-    <script src="back/vendors/text_editor/summernote-bs4.js"></script>
-    <script src="back/vendors/apex_chart/apexcharts.js"></script>
-    
+    <script src="vendors/text_editor/summernote-bs4.js"></script>
+    <script src="vendors/apex_chart/apexcharts.js"></script>
     <script src="../assets/js/sweetalert2.all.min.js"></script>
-    <script src="back/js/custom.js"></script>
+
+    <script src="js/custom.js"></script>
     <script src="../includes/sender.js"></script>
 </body>
 

@@ -255,7 +255,7 @@ function workhistory()
                         aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="'.$row2['maplink'].'" target="blank">View on map</a>';
         if ($row['status'] == 'approved') {
-            echo '<a class="dropdown-item" href="completetask.php?id='.$row['id'].'&residenceid='.$row2['id'].'">Click to complete</a>
+            echo '<a class="dropdown-item" href="completetask.php?id='.$row['id'].'&residenceid='.$row2['id'].'&staffid='.$row['staffid'].'">Click to complete</a>
             <a class="dropdown-item" target="blank" href="../upload/'.$row2['pastrecord'].'">View Residence Records</a>
             ';
         } elseif ($row['status'] == 'pending') {

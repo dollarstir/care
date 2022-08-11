@@ -1,18 +1,18 @@
 <?php
-include '../includes/stafffunctions.php';
+include '../includes/adminfunction.php';
 
-begin('Fill Report'); ?>
+begin1('Reply Messages'); ?>
 
 <body class="crm_body_bg">
 
 
 
-<?php staffsidebar(); ?>
+<?php adminsidebar(); ?>
 
 
     <section class="main_content dashboard_part">
 
-    <?php staffheader();
+    <?php adminheader();
 
     ?>
 
@@ -27,35 +27,33 @@ begin('Fill Report'); ?>
                             <?php
                                 include '../includes/dbcon.php';
                                 $id = $_GET['id'];
-                            $residenceid = $_GET['residenceid'];
-                            $staffid = $_GET['staffid'];
-                            $sel = mysqli_query($conn, "SELECT * FROM records WHERE   id = '$id'");
-                            $row = mysqli_fetch_array($sel);
-
-                            $sel2 = mysqli_query($conn, "SELECT * FROM residence WHERE id = '$residenceid'");
-                            $row2 = mysqli_fetch_array($sel2);
+                                $sel = mysqli_query($conn, "SELECT * FROM messages WHERE   id = '$id'");
+                                $row = mysqli_fetch_array($sel);
+                                $staffid = $row['staffid'];
+                                $sel2 = mysqli_query($conn, "SELECT * FROM staff WHERE id = '$staffid' ");
+                                $row2 = mysqli_fetch_array($sel2);
                                 ?>
                                 <div class="main-title">
-                                    <h3 class="mb-0">Fill Report for <?php echo $row2['name']; ?></h3>
+                                    <h3 class="mb-0">Reply to  <?php echo $row2['name']; ?></h3>
                                 </div>
                             </div>
-                            <form class="completetask">
-                                <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Write Report on Residence(<?php echo $row2['name']; ?>) </label>
-                                    <textarea class="form-control" id="exampleFormControlInput1"
-                                        placeholder="enter your report" name="staffreport" ><?php echo $row['staffreport']; ?></textarea>
-                                        <input type="hidden" name="id" value="<?php echo $id; ?>">
-                                        <input type="hidden" name="residenceid" value="<?php echo $residenceid; ?>">
-                                </div>
-
+                            <form class="replymessage">
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Message</label>
                                     <textarea class="form-control" id="exampleFormControlInput1"
-                                        placeholder="enter residence comment" name="residencecomment" ><?php echo  $row['residencecomment']; ?></textarea>
+                                        placeholder="enter your report" name="message"  readonly><?php echo $row['message']; ?></textarea>
+                                        <input type="hidden" name="id" value="<?php echo $id; ?>">
                                         
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Save Report</button>
+                                <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Reply Message</label>
+                                    <textarea class="form-control" id="exampleFormControlInput1"
+                                        placeholder="enter reply" name="reply" ><?php echo  $row['reply']; ?></textarea>
+                                        
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Send</button>
 
 
                                 

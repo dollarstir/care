@@ -1,18 +1,18 @@
 <?php
-include '../includes/adminfunction.php';
+include '../includes/stafffunctions.php';
 
-begin1('Messages'); ?>
+begin('Messages'); ?>
 
 <body class="crm_body_bg">
 
 
 
-    <?php adminsidebar(); ?>
+    <?php staffsidebar(); ?>
 
 
     <section class="main_content dashboard_part">
 
-        <?php adminheader(); ?>
+        <?php staffheader(); ?>
 
         <div class="main_content_iner ">
             <div class="container-fluid p-0">
@@ -31,7 +31,7 @@ begin1('Messages'); ?>
                         <div class="white_box QA_section card_height_100">
                             <div class="white_box_tittle list_header m-0 align-items-center">
                                 <div class="main-title mb-sm-15">
-                                    <h3 class="m-0 nowrap">Messages From Staff</h3>
+                                    <h3 class="m-0 nowrap">Messages</h3>
                                 </div>
                                 <!-- <div class="box_right d-flex lms_block">
                                     <div class="serach_field-area2">
@@ -51,7 +51,7 @@ begin1('Messages'); ?>
                             <table class="table lms_table_active2">
                                     <thead>
                                         <tr>
-                                        <th scope="col"> Name of Staff</th>
+                                        
                                             
                                             <th scope="col">Message </th>
                                             <th scope="col">Date </th>
@@ -64,7 +64,7 @@ begin1('Messages'); ?>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php supportmessages(); ?>
+                                        <?php messagesssent(); ?>
                                     </tbody>
                                 </table>
                             </div>

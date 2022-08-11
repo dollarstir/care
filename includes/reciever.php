@@ -47,6 +47,15 @@ if (isset($_GET['action'])) {
             extract($_POST);
             completetask($id, $residenceid, $staffreport, $residencecomment);
             break;
+        case 'replymessage':
+            extract($_POST);
+            replymessage($id, $reply);
+            break;
+
+        case 'deletemessage'
+            extract($_POST);
+            deletemessage($id);
+            break;
         default:
 
         break;

@@ -1,7 +1,7 @@
 <?php
 include '../includes/stafffunctions.php';
 
-begin('Home'); ?>
+begin('Requests'); ?>
 
 <body class="crm_body_bg">
 

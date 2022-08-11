@@ -108,6 +108,18 @@ function begin1($title)
                  </ul>
              </li>
 
+             <li class="">
+                 <a class="has-arrow" href="#" aria-expanded="false">
+                     <img src="img/menu-icon/3.svg" alt="">
+                     <span>Support Messages</span>
+                 </a>
+                 <ul>
+                     <li><a href="support.php">View Messages</a></li>
+                     
+                     
+                 </ul>
+             </li>
+
          
      </ul>
  </nav>';
@@ -430,7 +442,7 @@ function staffrequest()
         echo '</div>
                 </div>
             </div>
-        </td>';
+        </td></tr>';
     }
 }
 
@@ -450,6 +462,62 @@ function approverequest($id)
     $update2 = mysqli_query($conn, "UPDATE residence SET status = 'undertreatment' WHERE id = '$resid' ");
     if ($update && $update2) {
         echo 'requestsuccess';
+    } else {
+        echo 'failed';
+    }
+}
+
+function supportmessages()
+{
+    include '../includes/dbcon.php';
+    $sel = mysqli_query($conn, 'SELECT * FROM messages  ORDER BY id DESC');
+    while ($row = mysqli_fetch_array($sel)) {
+        $staffid = $row['staffid'];
+        $sel2 = mysqli_query($conn, "SELECT * FROM staff WHERE id = '$staffid'");
+        $row2 = mysqli_fetch_array($sel2);
+        echo '<tr>
+
+        
+        <th scope="row">
+            <div class="patient_thumb d-flex align-items-center">
+                <div class="student_list_img mr_20">
+                    <img src="../upload/'.$row2['pic'].'" alt="" srcset="">
+                </div>
+                <p>'.$row2['name'].'</p>
+            </div>
+        </th>
+        <td>'.$row['message'].'</td>
+        <td>'.$row['dateadded'].'</td>
+        <td>'.$row['reply'].'</td>
+        <td>'.$row['replydate'].'</td>
+        <td>
+            <div class="amoutn_action d-flex align-items-center">
+                
+                <div class="dropdown ms-4">
+                    <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="replymessage.php?id='.$row['id'].'">Reply</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </td>
+        
+        
+        </tr>';
+    }
+}
+
+function replymessage($id, $reply)
+{
+    include '../includes/dbcon.php';
+    $replydate = date('jS F, Y');
+    $update = mysqli_query($conn, "UPDATE messages SET reply = '$reply', replydate = '$replydate' WHERE id = '$id' ");
+    if ($update) {
+        echo 'replysuccess';
     } else {
         echo 'failed';
     }

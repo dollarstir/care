@@ -144,6 +144,41 @@ $(function(){
 
         }
 
+        else if(response == 'messagedeleted'){
+
+          swal({
+              title: "Success",
+              text: "Message Deleted Successfully",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location="messages.php";
+            });
+
+      }
+
+
+        else if(response == 'replysuccess'){
+
+          swal({
+              title: "Success",
+              text: "Reply sent successfuly",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location="support.php";
+            });
+
+      }
+
         else if(response == 'reportsuccess'){
 
           swal({
@@ -378,6 +413,48 @@ $('.completetask').submit(function(e){
       cache: false,
       contentType: false,
       processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+
+// reply staff support via ajax
+
+$('.replymessage').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: '../includes/reciever.php?action=replymessage',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+
+
+// delete message via ajax
+
+$(document).on('click','.deletemessage',function(e){
+
+  e.preventDefault();
+  
+  var id = $(this).attr('id');
+  var staff = {
+      url: '../includes/reciever.php?action=deletemessage',
+      type: 'post',
+      data: {"id": id},
+      
       beforeSend: loading,
       success: success
 

@@ -102,6 +102,7 @@ function begin($title)
              </a>
              <ul>
                  <li><a href="support.php">Contact Support</a></li>
+                 <li><a href="messages.php">View Messages</a></li>
                  
              </ul>
          </li>
@@ -260,6 +261,8 @@ function workhistory()
             ';
         } elseif ($row['status'] == 'pending') {
             echo '<a class="dropdown-item" href="deleterequest.php?id='.$row['id'].'&residenceid='.$row2['id'].'">Cancel Request</a>';
+        } elseif ($row['status'] == 'completed') {
+            echo '<a class="dropdown-item" href="completetask.php?id='.$row['id'].'&residenceid='.$row2['id'].'&staffid='.$row['staffid'].'">View | Edit report</a>';
         }
 
         echo '</div>
@@ -279,6 +282,53 @@ function completetask($id, $residenceid, $staffreport, $residencecomment)
     $update2 = mysqli_query($conn, "UPDATE residence SET status = 'completed', lasttreated = '$datecompleted'  WHERE id = '$residenceid'");
     if ($update && $update2) {
         echo 'reportsuccess';
+    } else {
+        echo 'failed';
+    }
+}
+
+// staff messages
+function messagesssent()
+{
+    include '../includes/dbcon.php';
+    $id = $_SESSION['id'];
+    $sel = mysqli_query($conn, "SELECT * FROM messages WHERE id = '$id'  ORDER BY id DESC");
+    while ($row = mysqli_fetch_array($sel)) {
+        echo '<tr>
+
+        
+        
+        <td>'.$row['message'].'</td>
+        <td>'.$row['dateadded'].'</td>
+        <td>'.$row['reply'].'</td>
+        <td>'.$row['replydate'].'</td>
+        <td>
+            <div class="amoutn_action d-flex align-items-center">
+                
+                <div class="dropdown ms-4">
+                    <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuLink">
+                        <button class="dropdown-item deletemessage" id="'.$row['id'].'">Delete</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </td>
+        
+        
+        </tr>';
+    }
+}
+
+function deletemessage($id)
+{
+    include 'dbcon.php';
+    $del = mysqli_query($conn, "DELETE FROM messages WHERE id = '$id'");
+    if ($del) {
+        echo 'messagedeleted';
     } else {
         echo 'failed';
     }

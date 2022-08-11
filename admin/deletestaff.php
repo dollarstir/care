@@ -1,5 +1,6 @@
 <?php
 
+include '../includes/dbcon.php';
 $id = $_GET['id'];
 $sql = "DELETE FROM staff WHERE id = $id";
 $result = mysqli_query($conn, $sql);

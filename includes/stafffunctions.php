@@ -258,7 +258,7 @@ function workhistory()
             <a class="dropdown-item" href="completetask.php?id='.$row['id'].'">View Patients Records</a>
             ';
         } elseif ($row['status'] == 'pending') {
-            echo '<a class="dropdown-item" href="deleterequest.php?id='.$row['id'].'">Cancel Request</a>';
+            echo '<a class="dropdown-item" href="deleterequest.php?id='.$row['id'].'&residenceid='.$row2['id'].'">Cancel Request</a>';
         }
 
         echo '</div>

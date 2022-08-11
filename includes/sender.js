@@ -338,8 +338,8 @@ $(document).on('click','.approvestaff',function(e){
       type: 'post',
       data: {"id": id},
       
-      beforeSend: before,
-      success: resp
+      beforeSend: loading,
+      success: success
 
   };
   $.ajax(staff);

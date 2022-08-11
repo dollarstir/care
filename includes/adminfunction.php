@@ -423,6 +423,8 @@ function staffrequest()
             ';
         } elseif ($row['status'] == 'pending') {
             echo '<button class="dropdown-item approvestaff" id="'.$row['id'].'">Approve Request</button>';
+        } elseif ($row['status'] == 'completed') {
+            echo '<a class="dropdown-item" href="'.$row2['maplink'].'" target="blank">View Report</a>';
         }
 
         echo '</div>

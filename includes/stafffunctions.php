@@ -337,6 +337,7 @@ function deletemessage($id)
 // makingrequest for residence
 function makerequest($id)
 {
+    session_start();
     include 'dbcon.php';
     $date = date('jS F, Y');
     $staffid = $_SESSION['id'];
@@ -347,4 +348,14 @@ function makerequest($id)
     } else {
         echo 'failed to make request';
     }
+}
+
+function completedtask()
+{
+    include '../includes/dbcon.php';
+    $id = $_SESSION['id'];
+    $sel = mysqli_query($conn, "SELECT * FROM records WHERE staffid = '$id' AND status = 'completed'");
+    $c = mysqli_num_rows($sel);
+
+    return $c;
 }

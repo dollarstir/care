@@ -37,6 +37,11 @@ if (isset($_GET['action'])) {
             $time = $from.' - '.$to;
             addresidence($name, $address, $map, $dob, $gender, $medcondition, $period, $time);
             break;
+
+        case 'approverequest':
+            extract($_POST);
+            approverequest($id);
+            break;
         default:
 
         break;

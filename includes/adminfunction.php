@@ -88,11 +88,11 @@ function begin1($title)
          <li class="">
              <a class="has-arrow" href="#" aria-expanded="false">
                  <img src="img/menu-icon/3.svg" alt="">
-                 <span>Records</span>
+                 <span>Requests</span>
              </a>
              <ul>
                  
-                 <li><a href="record.php">View Records</a></li>
+                 <li><a href="record.php">View Requests</a></li>
                  
              </ul>
              </li>
@@ -355,6 +355,7 @@ function listresidence()
                     <div class="dropdown-menu dropdown-menu-right"
                         aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
+                        <a class="dropdown-item" target="blank" href="../upload/'.$row['pastrecord'].'">View Patient Records</a>
                         <a class="dropdown-item" href="#">Edit</a>
                         <a class="dropdown-item" href="deleteresidence.php?id='.$row['id'].'">Delete</a>
 
@@ -363,5 +364,91 @@ function listresidence()
             </div>
         </td>
     </tr>';
+    }
+}
+
+// getting all requests from staff
+
+function staffrequest()
+{
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, 'SELECT * FROM records  ORDER BY id DESC');
+    while ($row = mysqli_fetch_array($sel)) {
+        $resid = $row['residenceid'];
+        $sel2 = mysqli_query($conn, "SELECT * FROM residence WHERE id = '$resid' ");
+        $row2 = mysqli_fetch_array($sel2);
+        $staffid = $row['staffid'];
+        $sel3 = mysqli_query($conn, "SELECT * FROM staff WHERE id = '$staffid' ");
+        $row3 = mysqli_fetch_array($sel3);
+        echo '<tr>
+
+        <th scope="row">
+            <div class="patient_thumb d-flex align-items-center">
+                <div class="student_list_img mr_20">
+                    <img src="../upload/'.$row3['pic'].'" alt="" srcset="">
+                </div>
+                <p>'.$row3['name'].'</p>
+            </div>
+        </th>
+        <th scope="row">
+            <div class="patient_thumb d-flex align-items-center">
+                <div class="student_list_img mr_20">
+                    <img src="../upload/'.$row2['image'].'" alt="" srcset="">
+                </div>
+                <p>'.$row2['name'].'</p>
+            </div>
+        </th>
+        <td>'.$row2['address'].'</td>
+        <td>'.$row['requestdate'].'</td>
+        <td>'.$row['approvaldate'].'</td>
+        <td>'.$row['datecompleted'].'</td>
+        <td>'.$row['status'].'</td>
+        
+        <td>
+            <div class="amoutn_action d-flex align-items-center">
+                
+                <div class="dropdown ms-4">
+                    <a class="btn btn-primary dropdown-toggle" style="color:white !important;" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right"
+                        aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="'.$row2['maplink'].'" target="blank">View Residence location</a>
+                        <a class="dropdown-item" target="blank" href="../upload/'.$row2['pastrecord'].'">View Residence Records</a>
+                        ';
+
+        if ($row['status'] == 'approved') {
+            echo '
+            
+            ';
+        } elseif ($row['status'] == 'pending') {
+            echo '<button class="dropdown-item approvestaff" id="'.$row['id'].'">Approve Request</button>';
+        }
+
+        echo '</div>
+                </div>
+            </div>
+        </td>';
+    }
+}
+
+// function to approve request
+
+function approverequest($id)
+{
+    include 'dbcon.php';
+    $sel = mysqli_query($conn, "SELECT * FROM records WHERE id = '$id' ");
+    $row = mysqli_fetch_array($sel);
+    $resid = $row['residenceid'];
+    $sel2 = mysqli_query($conn, "SELECT * FROM residence WHERE id = '$resid' ");
+    $row2 = mysqli_fetch_array($sel2);
+
+    $date = date('jS F Y');
+    $update = mysqli_query($conn, "UPDATE records SET status = 'approved', approvaldate = '$date' WHERE id = '$id' ");
+    $update2 = mysqli_query($conn, "UPDATE residence SET status = 'undertreatment' WHERE id = '$resid' ");
+    if ($update) {
+        echo 'success';
+    } else {
+        echo 'failed';
     }
 }

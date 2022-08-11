@@ -310,6 +310,24 @@ $('.addresidence').submit(function(e){
   $.ajax(staff);
 });
 
+// approve staff request ajax
+$(document).on('click','.approvestaff',function(e){
+
+  e.preventDefault();
+  
+  var id = $(this).attr('id');
+  var staff = {
+      url: '../includes/reciever.php?action=approverequest',
+      type: 'post',
+      data: {"id": id},
+      
+      beforeSend: before,
+      success: resp
+
+  };
+  $.ajax(staff);
+});
+
 
 
 

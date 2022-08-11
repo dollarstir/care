@@ -60,7 +60,7 @@ begin1('Add Residence'); ?>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Medical Condition</label>
+                                    <label class="form-label" for="exampleFormControlInput1">Care Plan</label>
                                     <textarea class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="medcondition"></textarea>
                                 </div>

@@ -160,7 +160,8 @@ function support($staffid, $message)
     if (empty(trim($message))) {
         echo 'please enter a message';
     } else {
-        if (mysqli_query($conn, "INSERT INTO messages (staffid, message) VALUES ('$staffid', '$message')")) {
+        $dateadded = date('jS F, Y');
+        if (mysqli_query($conn, "INSERT INTO messages (staffid, message,dateadded) VALUES ('$staffid', '$message', '$dateadded')")) {
             echo 'success';
         } else {
             echo 'Failed to send message';
@@ -254,8 +255,8 @@ function workhistory()
                         aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="'.$row2['maplink'].'" target="blank">View on map</a>';
         if ($row['status'] == 'approved') {
-            echo '<a class="dropdown-item" href="completetask.php?id='.$row['id'].'">Click to complete</a>
-            <a class="dropdown-item" href="completetask.php?id='.$row['id'].'">View Patients Records</a>
+            echo '<a class="dropdown-item" href="completetask.php?id='.$row['id'].'&residenceid='.$row2['id'].'">Click to complete</a>
+            <a class="dropdown-item" target="blank" href="../upload/'.$row2['pastrecord'].'">View Residence Records</a>
             ';
         } elseif ($row['status'] == 'pending') {
             echo '<a class="dropdown-item" href="deleterequest.php?id='.$row['id'].'&residenceid='.$row2['id'].'">Cancel Request</a>';

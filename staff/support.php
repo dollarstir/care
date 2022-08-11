@@ -103,7 +103,9 @@ begin('Support'); ?>
     <script src="../assets/js/sweetalert2.all.min.js"></script>
 
     <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../includes/sender.js"></script>
+    
 </body>
 
 </html>

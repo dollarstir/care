@@ -276,7 +276,7 @@ function completetask($id, $residenceid, $staffreport, $residencecomment)
     include 'dbcon.php';
     $datecompleted = date('jS F, Y');
     $update = mysqli_query($conn, "UPDATE records SET status = 'completed', datecompleted = '$datecompleted', staffreport = '$staffreport', residencecomment = '$residencecomment' WHERE id = '$id'");
-    $update2 = mysqli_query($conn, "UPDATE residence SET status = 'completed' WHERE id = '$residenceid'");
+    $update2 = mysqli_query($conn, "UPDATE residence SET status = 'completed', lasttreated = '$datecompleted'  WHERE id = '$residenceid'");
     if ($update && $update2) {
         echo 'reportsuccess';
     } else {

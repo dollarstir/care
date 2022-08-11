@@ -144,6 +144,23 @@ $(function(){
 
         }
 
+        else if(response == 'requestsuccess'){
+
+          swal({
+              title: "Success",
+              text: "Request approved Successfuly",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location="record.php";
+            });
+
+      }
+
 
        
         else{

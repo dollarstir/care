@@ -446,8 +446,8 @@ function approverequest($id)
     $date = date('jS F Y');
     $update = mysqli_query($conn, "UPDATE records SET status = 'approved', approvaldate = '$date' WHERE id = '$id' ");
     $update2 = mysqli_query($conn, "UPDATE residence SET status = 'undertreatment' WHERE id = '$resid' ");
-    if ($update) {
-        echo 'success';
+    if ($update && $update2) {
+        echo 'requestsuccess';
     } else {
         echo 'failed';
     }

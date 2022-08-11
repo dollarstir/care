@@ -52,7 +52,7 @@ if (isset($_GET['action'])) {
             replymessage($id, $reply);
             break;
 
-        case 'deletemessage'
+        case 'deletemessage':
             extract($_POST);
             deletemessage($id);
             break;

@@ -367,7 +367,7 @@ function listresidence()
                     <div class="dropdown-menu dropdown-menu-right"
                         aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
-                        <a class="dropdown-item" target="blank" href="../upload/'.$row['pastrecord'].'">View Patient Records</a>
+                        <a class="dropdown-item" target="blank" href="../upload/'.$row['pastrecord'].'">View Residence Records</a>
                         <!--<a class="dropdown-item" href="#">Edit</a>-->
                         <a class="dropdown-item" href="deleteresidence.php?id='.$row['id'].'">Delete</a>
 

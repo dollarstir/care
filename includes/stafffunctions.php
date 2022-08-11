@@ -279,7 +279,7 @@ function completetask($id, $residenceid, $staffreport, $residencecomment)
     include 'dbcon.php';
     $datecompleted = date('jS F, Y');
     $update = mysqli_query($conn, "UPDATE records SET status = 'completed', datecompleted = '$datecompleted', staffreport = '$staffreport', residencecomment = '$residencecomment' WHERE id = '$id'");
-    $update2 = mysqli_query($conn, "UPDATE residence SET status = 'completed', lasttreated = '$datecompleted'  WHERE id = '$residenceid'");
+    $update2 = mysqli_query($conn, "UPDATE residence SET status = 'available', lasttreated = '$datecompleted'  WHERE id = '$residenceid'");
     if ($update && $update2) {
         echo 'reportsuccess';
     } else {
@@ -354,7 +354,7 @@ function completedtask()
 {
     include '../includes/dbcon.php';
     $id = $_SESSION['id'];
-    $sel = mysqli_query($conn, "SELECT * FROM records WHERE staffid = '$id' AND status = 'available'");
+    $sel = mysqli_query($conn, "SELECT * FROM records WHERE staffid = '$id' AND status = 'completed'");
     $c = mysqli_num_rows($sel);
 
     return $c;

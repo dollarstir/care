@@ -300,7 +300,7 @@ function liststaff()
                             </a>
                             <div class="dropdown-menu dropdown-menu-right"
                                 aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="editstaff.php?id='.$row['id'].'">Edit Staff</a>
+                                <!--<a class="dropdown-item" href="editstaff.php?id='.$row['id'].'">Edit Staff</a>-->
                                 <a class="dropdown-item" href="deletestaff.php?id='.$row['id'].'">Delete</a>
 
                             </div>
@@ -368,7 +368,7 @@ function listresidence()
                         aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
                         <a class="dropdown-item" target="blank" href="../upload/'.$row['pastrecord'].'">View Patient Records</a>
-                        <a class="dropdown-item" href="#">Edit</a>
+                        <!--<a class="dropdown-item" href="#">Edit</a>-->
                         <a class="dropdown-item" href="deleteresidence.php?id='.$row['id'].'">Delete</a>
 
                     </div>

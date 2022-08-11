@@ -354,7 +354,7 @@ function completedtask()
 {
     include '../includes/dbcon.php';
     $id = $_SESSION['id'];
-    $sel = mysqli_query($conn, "SELECT * FROM records WHERE staffid = '$id' AND status = 'completed'");
+    $sel = mysqli_query($conn, "SELECT * FROM records WHERE staffid = '$id' AND status = 'available'");
     $c = mysqli_num_rows($sel);
 
     return $c;

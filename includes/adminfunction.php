@@ -436,7 +436,7 @@ function staffrequest()
         } elseif ($row['status'] == 'pending') {
             echo '<button class="dropdown-item approvestaff" id="'.$row['id'].'">Approve Request</button>';
         } elseif ($row['status'] == 'completed') {
-            echo '<a class="dropdown-item" href="viewreport.php?id='.$row['id'].'">View Report</a>';
+            echo '<a class="dropdown-item" href="viewreport.php?id='.$row['id'].'&residenceid='.$row2['id'].'&staffid='.$staffid.'">View Report</a>';
         }
 
         echo '</div>

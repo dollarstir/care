@@ -144,6 +144,23 @@ $(function(){
 
         }
 
+        else if(response == 'reportsuccess'){
+
+          swal({
+              title: "Success",
+              text: "Report Submitted Successfuly",
+              timer: 1000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location="record.php";
+            });
+
+      }
+
         else if(response == 'requestsuccess'){
 
           swal({
@@ -338,6 +355,29 @@ $(document).on('click','.approvestaff',function(e){
       type: 'post',
       data: {"id": id},
       
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+
+
+
+// staff completetask via ajax
+
+$('.completetask').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: '../includes/reciever.php?action=completetask',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
       beforeSend: loading,
       success: success
 

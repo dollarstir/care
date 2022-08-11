@@ -42,6 +42,11 @@ if (isset($_GET['action'])) {
             extract($_POST);
             approverequest($id);
             break;
+
+        case 'completetask':
+            extract($_POST);
+            completetask($id, $residenceid, $staffreport, $residencecomment);
+            break;
         default:
 
         break;

@@ -44,7 +44,7 @@ begin('Fill Report'); ?>
                                     <label class="form-label" for="exampleFormControlInput1">Write Report on Residence(<?php echo $row2['name']; ?>) </label>
                                     <textarea class="form-control" id="exampleFormControlInput1"
                                         placeholder="enter your report" name="staffreport" value="<?php echo $row['staffreport']; ?>"></textarea>
-                                        <input type="hidden" name="requestid" value="<?php echo $id; ?>">
+                                        <input type="hidden" name="id" value="<?php echo $id; ?>">
                                         <input type="hidden" name="residenceid" value="<?php echo $residenceid; ?>">
                                 </div>
 

@@ -56,6 +56,11 @@ if (isset($_GET['action'])) {
             extract($_POST);
             deletemessage($id);
             break;
+
+        case 'makerequest':
+            extract($_POST);
+            makerequest($id);
+            break;
         default:
 
         break;

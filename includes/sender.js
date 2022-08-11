@@ -144,6 +144,23 @@ $(function(){
 
         }
 
+        else if(response == 'requestsuccess'){
+
+          swal({
+              title: "Success",
+              text: "Request sent Successfully",
+              timer: 2000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location.reload();
+            });
+
+      }
+
         else if(response == 'messagedeleted'){
 
           swal({
@@ -452,6 +469,28 @@ $(document).on('click','.deletemessage',function(e){
   var id = $(this).attr('id');
   var staff = {
       url: '../includes/reciever.php?action=deletemessage',
+      type: 'post',
+      data: {"id": id},
+      
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+
+
+
+// Staff Request for Residence via ajax
+
+$(document).on('click','.makerequest',function(e){
+
+  e.preventDefault();
+  
+  var id = $(this).attr('id');
+  var staff = {
+      url: '../includes/reciever.php?action=makerequest',
       type: 'post',
       data: {"id": id},
       

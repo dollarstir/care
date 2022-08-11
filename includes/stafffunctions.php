@@ -201,7 +201,7 @@ function listresidencestaff()
                     <div class="dropdown-menu dropdown-menu-right"
                         aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
-                        <a class="dropdown-item" href="#">Make request</a>
+                        <button class="dropdown-item makerequest" id="'.$row['id'].'">Make request</button>
                         
 
                     </div>
@@ -292,7 +292,7 @@ function messagesssent()
 {
     include '../includes/dbcon.php';
     $id = $_SESSION['id'];
-    $sel = mysqli_query($conn, "SELECT * FROM messages WHERE id = '$id'  ORDER BY id DESC");
+    $sel = mysqli_query($conn, "SELECT * FROM messages WHERE staffid = '$id'  ORDER BY id DESC");
     while ($row = mysqli_fetch_array($sel)) {
         echo '<tr>
 
@@ -331,5 +331,20 @@ function deletemessage($id)
         echo 'messagedeleted';
     } else {
         echo 'failed';
+    }
+}
+
+// makingrequest for residence
+function makerequest($id)
+{
+    include 'dbcon.php';
+    $date = date('jS F, Y');
+    $staffid = $_SESSION['id'];
+    $update = mysqli_query($conn, "UPDATE residence SET status = 'requested' WHERE id = '$id'");
+    $insert = mysqli_query($conn, "INSERT INTO records (residenceid, staffid, requestdate,status) VALUES ('$id', '$staffid', '$date', 'pending')");
+    if ($update && $insert) {
+        echo 'requestsuccess';
+    } else {
+        echo 'failed to make request';
     }
 }

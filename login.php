@@ -28,7 +28,7 @@
           <li class="signup-inactive"><a class="btn">Sign up </a></li>
         </ul>
       </div>
-      <div ng-app ng-init="checked = false">
+      <div ng-app ng-init="checked = false" style="margin-top: -60px !important;">
         <form class="form-signin"  action="" method="post" name="form">
           <label for="username">Email</label>
           <input class="form-styling" type="text" name="email" placeholder="" />
@@ -47,15 +47,23 @@
         
 
         <form class="form-signup" action="" method="post" name="form">
-          <label for="fullname">Full name</label>
-          <input class="form-styling" type="text" name="fullname" placeholder="" />
-          <label for="email">Email</label>
-          <input class="form-styling" type="text" name="email" placeholder="" />
-          <label for="password">Password</label>
-          <input class="form-styling" type="text" name="password" placeholder="" />
-          <label for="confirmpassword">Confirm password</label>
-          <input class="form-styling" type="text" name="confirmpassword" placeholder="" />
-          <a ng-click="checked = !checked" class="btn-signup">Sign Up</a>
+          <!-- <label for="fullname">First Name</label> -->
+          <input class="form-styling" type="text" name="name" placeholder="FULL NAME" />
+
+         
+          <!-- <label for="email">Email</label> -->
+          <input class="form-styling" type="email" name="email" placeholder="EMAIL" />
+          <!-- <label for="email">Phone</label> -->
+          <input class="form-styling" type="number" name="phone" placeholder="PHONE" />
+          <label for="email">DOB</label>
+          <input class="form-styling" type="date" name="dob" placeholder="" />
+          <label for="email">Upload Staff Picture</label>
+          <input class="form-styling" type="file" name="image" placeholder="" />
+          <!-- <label for="password">Password</label> -->
+          <input class="form-styling" type="password" name="password" placeholder="PASSWORD" />
+          <!-- <label for="confirmpassword">Confirm password</label> -->
+          <input class="form-styling" type="password" name="repass" placeholder="COMFIRM PASSWORD" />
+          <button class="btn-signup">Sign Up</a>
         </form>
 
         <div class="success">

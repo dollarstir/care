@@ -305,7 +305,7 @@ $('.form-signin').submit(function(e){
 // staff registration via ajax
 
 
-$('.register').submit(function(e){
+$('.form-signup').submit(function(e){
 
   e.preventDefault();
   

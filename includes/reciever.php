@@ -12,7 +12,7 @@ if (isset($_GET['action'])) {
 
         case 'register':
             extract($_POST);
-            register($fname, $lname, $email, $phone, $dob, $password, $repass);
+            register($name, $email, $phone, $dob, $password, $repass);
             break;
         case 'forgotpass':
             extract($_POST);

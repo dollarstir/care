@@ -274,12 +274,41 @@ function workhistory()
 
 // adding staff report on residence
 
-function completetask($id, $residenceid, $staffreport, $residencecomment)
+function completetask($id, $residenceid, $staffid, $staffreport)
 {
     include 'dbcon.php';
     $datecompleted = date('jS F, Y');
     $update = mysqli_query($conn, "UPDATE records SET status = 'completed', datecompleted = '$datecompleted', staffreport = '$staffreport', residencecomment = '$residencecomment' WHERE id = '$id'");
     $update2 = mysqli_query($conn, "UPDATE residence SET status = 'available', lasttreated = '$datecompleted'  WHERE id = '$residenceid'");
+    // sending email to residence
+    $sel = mysqli_query($conn, "SELECT * FROM residence WHERE id = '$residenceid'");
+    $row = mysqli_fetch_array($sel);
+    $sel2 = mysqli_query($conn, "SELECT * FROM staff WHERE id = '$staffid'");
+    $row2 = mysqli_fetch_array($sel2);
+    $to = $row['email'];
+    $subject = 'Home Assist Staff Review';
+
+    $message = '<html>
+            <head>
+            <title>Staff Review</title>
+            </head>
+            <body>
+            <h1>Password Reset</h1>
+            <p>Hi '.$row['name'].',</p>
+            <p>You recently  recieved treatment from our staff '.$row2['name'].' on '.$datecompleted.'. <br>kindly click on the link below to review our staff</p>
+            <p><a href="ha.iamdollarstir.tk/feedback.php?id='.$id.'&residenceid='.$residenceid.'&staffid='.$staffid.'">Review your Staff</a>/p>
+            <p>Regards,</p>
+            <p>The Homecare Team</p>
+            </body>
+            </html>';
+    $mymail = 'homeassist@iamdollarstir.tk';
+    $headers = 'From: '.$mymail."\r\n".
+            'Reply-To: '.$to."\r\n".
+            'X-Mailer: PHP/'.phpversion();
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+    mail($email, $subject, $message, $headers);
+
     if ($update && $update2) {
         echo 'reportsuccess';
     } else {

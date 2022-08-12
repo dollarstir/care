@@ -46,14 +46,15 @@ begin('Fill Report'); ?>
                                         placeholder="enter your report" name="staffreport" ><?php echo $row['staffreport']; ?></textarea>
                                         <input type="hidden" name="id" value="<?php echo $id; ?>">
                                         <input type="hidden" name="residenceid" value="<?php echo $residenceid; ?>">
+                                        <input type="hidden" name="staffid" value="<?php echo $staffid; ?>">
                                 </div>
 
-                                <div class="mb-3">
+                                <!-- <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Message</label>
                                     <textarea class="form-control" id="exampleFormControlInput1"
-                                        placeholder="enter residence comment" name="residencecomment" ><?php echo  $row['residencecomment']; ?></textarea>
+                                        placeholder="enter residence comment" name="residencecomment" ></textarea>
                                         
-                                </div>
+                                </div> -->
 
                                 <button type="submit" class="btn btn-primary">Save Report</button>
 

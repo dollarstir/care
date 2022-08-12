@@ -45,7 +45,7 @@ if (isset($_GET['action'])) {
 
         case 'completetask':
             extract($_POST);
-            completetask($id, $residenceid, $staffreport, $residencecomment);
+            completetask($id, $residenceid, $staffid, $staffreport);
             break;
         case 'replymessage':
             extract($_POST);

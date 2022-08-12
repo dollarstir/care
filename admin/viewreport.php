@@ -55,7 +55,7 @@ begin1('View Report'); ?>
                                         
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Save Report</button>
+                                <!-- <button type="submit" class="btn btn-primary">Save Report</button> -->
 
 
                                 

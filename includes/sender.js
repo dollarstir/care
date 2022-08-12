@@ -546,7 +546,24 @@ $(document).on('click','.makerequest',function(e){
   $.ajax(staff);
 });
 
+// review staff request via ajax
+$('.form-feedback').submit(function(e){
 
+  e.preventDefault();
+  
+  var staff = {
+      url: '../includes/reciever.php?action=review',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
 
 
 

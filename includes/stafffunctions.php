@@ -278,7 +278,7 @@ function completetask($id, $residenceid, $staffid, $staffreport)
 {
     include 'dbcon.php';
     $datecompleted = date('jS F, Y');
-    $update = mysqli_query($conn, "UPDATE records SET status = 'completed', datecompleted = '$datecompleted', staffreport = '$staffreport', residencecomment = '$residencecomment' WHERE id = '$id'");
+    $update = mysqli_query($conn, "UPDATE records SET status = 'completed', datecompleted = '$datecompleted', staffreport = '$staffreport' WHERE id = '$id'");
     $update2 = mysqli_query($conn, "UPDATE residence SET status = 'available', lasttreated = '$datecompleted'  WHERE id = '$residenceid'");
     // sending email to residence
     $sel = mysqli_query($conn, "SELECT * FROM residence WHERE id = '$residenceid'");
@@ -307,7 +307,7 @@ function completetask($id, $residenceid, $staffid, $staffreport)
             'X-Mailer: PHP/'.phpversion();
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-    mail($email, $subject, $message, $headers);
+    mail($to, $subject, $message, $headers);
 
     if ($update && $update2) {
         echo 'reportsuccess';
@@ -349,6 +349,18 @@ function messagesssent()
         
         
         </tr>';
+    }
+}
+
+function review($id, $residencecomment)
+{
+    include '../includes/dbcon.php';
+    $datecompleted = date('jS F, Y');
+    $update = mysqli_query($conn, "UPDATE records SET  residencecomment = '$residencecomment' WHERE id = '$id'");
+    if ($update) {
+        echo 'reviewsuccess';
+    } else {
+        echo 'failed to rate staff try again';
     }
 }
 

@@ -31,11 +31,21 @@
         </ul>
       </div>
       <div ng-app ng-init="checked = false" style="margin-top: -60px !important;">
-      <center><p>Leave your Comment  For Staff </p></center>
+      <?php
+
+        $id = $_GET['id'];
+        $residenceid = $_GET['residenceid'];
+        $staffid = $_GET['staffid'];
+        $sel = mysqli_query($conn, "SELECT * FROM staff WHERE   id = '$staffid'");
+        $row = mysqli_fetch_array($sel);
+      ?>
+      <center><p>Leave your Comment  For Staff <?php echo $row['name']; ?></p></center>
+
+      
         <form class="form-feedback"  action="" method="post" name="form">
           <label for="username">Enter email to receive password reset link</label>
           <textarea class="form-styling" style="color:white;margin:10px;width:90%;height:100px;padding-top:10px;"  name="residencecomment" placeholder="in  few words briefly rate your Staff service" ></textarea>
-          
+          <input type="hidden" name="id" value="<?php echo $id; ?>">
 
           <div class="btn-animate">
             <button

@@ -137,7 +137,7 @@ function staffheader()
                         </li>
                     </div>
                     <div class="profile_info">
-                        <img src="img/client_img.png" alt="#">
+                        <img src="../upload/'.$row['pic'].'" alt="#">
                         <div class="profile_info_iner">
                             <p>Staff </p>
                             <h5>'.$row['name'].'</h5>

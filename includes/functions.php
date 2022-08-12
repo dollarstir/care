@@ -10,10 +10,23 @@ function login($email, $password)
     if (empty(trim($email)) || empty(trim($password))) {
         echo 'Login details cannot be empty';
     } else {
-        if ($email == 'admin@gmail.com' && $password == 'admin') {
-            $_SESSION['admin'] = $email;
-            header('location: admin/index.php');
+        if ($email == 'admin@gmail.com' && $password == '123') {
+            $sel = mysqli_query($conn, "SELECT * FROM admin WHERE email = '$email' AND password ='$password'");
+
+            $row = mysqli_fetch_array($sel);
+            session_start();
+            $_SESSION['admin'] = $row;
+            echo 'loginsuccess1';
         } else {
+            $sel = mysqli_query($conn, "SELECT * FROM staff WHERE email = '$email' AND password ='$password'");
+            if (mysqli_num_rows($sel) >= 1) {
+                $row = mysqli_fetch_array($sel);
+                session_start();
+                $_SESSION['id'] = $row['id'];
+                echo 'loginsuccess';
+            } else {
+                echo 'Login details not corerct';
+            }
         }
     }
 }

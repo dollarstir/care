@@ -108,7 +108,7 @@ $(function(){
                 swal.showLoading();
               },
             }).then(function (result) {
-              window.location="index.php";
+              window.location="admin/index.php";
             });
 
       }

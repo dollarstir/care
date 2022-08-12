@@ -35,7 +35,7 @@ if (isset($_GET['action'])) {
         case 'addresidence':
             extract($_POST);
             $time = $from.' - '.$to;
-            addresidence($name, $address, $map, $dob, $gender, $medcondition, $period, $time);
+            addresidence($name, $email, $address, $map, $dob, $gender, $medcondition, $period, $time);
             break;
 
         case 'approverequest':

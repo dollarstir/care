@@ -32,8 +32,9 @@
       </div>
       <div ng-app ng-init="checked = false" style="margin-top: -60px !important;">
       <?php
+    include 'includes/dbcon.php';
 
-        $id = $_GET['id'];
+    $id = $_GET['id'];
         $residenceid = $_GET['residenceid'];
         $staffid = $_GET['staffid'];
         $sel = mysqli_query($conn, "SELECT * FROM staff WHERE   id = '$staffid'");

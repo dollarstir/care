@@ -146,6 +146,23 @@ $(function(){
 
         }
 
+        else if(response == 'reviewsuccess'){
+
+          swal({
+              title: "Success",
+              text: "Review added Successfully",
+              timer: 3000,
+              type: 'success',
+              padding: "2em",
+              onOpen: function () {
+                swal.showLoading();
+              },
+            }).then(function (result) {
+              window.location="index.php";
+            });
+
+      }
+
         else if(response == 'requestsuccess'){
 
           swal({
@@ -552,7 +569,7 @@ $('.form-feedback').submit(function(e){
   e.preventDefault();
   
   var staff = {
-      url: '../includes/reciever.php?action=review',
+      url: 'includes/reciever.php?action=review',
       type: 'post',
       data: new FormData(this),
       cache: false,

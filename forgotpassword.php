@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login </title>
+  <title>Reset Password </title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel="stylesheet" type="text/css">
 
 
@@ -23,27 +23,28 @@
   <div class="container">
     <div class="frame">
       <div class="nav">
+      
         <ul class="links">
-          <li class="signin-active"><a  href="login.php">Sign in</a></li>
-          <li class="signup-inactive"><a class="btn">Sign up </a></li>
+          <li class="signin-active"><a class="btn"></a></li>
+          <li class="signup-inactive"><a class="btn"> </a></li>
+          
         </ul>
       </div>
       <div ng-app ng-init="checked = false" style="margin-top: -60px !important;">
-        <form class="form-signin"  action="" method="post" name="form">
-          <label for="username">Email</label>
-          <input class="form-styling" type="text" name="email" placeholder="" />
-          <label for="password">Password</label>
-          <input class="form-styling" type="text" name="password" placeholder="" />
-          <input type="checkbox" id="checkbox" />
+      <center><p>RESET PASSWORD</p></center>
+        <form class="form-reset"  action="" method="post" name="form">
+          <label for="username">Enter email to receive password reset link</label>
+          <input class="form-styling" type="email" name="email" placeholder="EMAIL ADDRESS" />
+          
 
           <div class="btn-animate">
             <button
               style="background-color:#1059FF;color:white;float: left;font-weight: 700;text-transform: uppercase;font-size: 13px;text-align: center;padding-top: 4px;width: 100%;height: 35px;border: none;border-radius: 20px;cursor:pointer;"
-              type="submit" class="btn-sign">Login</button>
+              type="submit" class="btn-sign">Send</button>
           </div>
         </form>
 
-
+        
         
 
         <form class="form-signup" action="" method="post" name="form">
@@ -63,7 +64,7 @@
           <input class="form-styling" type="password" name="password" placeholder="PASSWORD" />
           <!-- <label for="confirmpassword">Confirm password</label> -->
           <input class="form-styling" type="password" name="repass" placeholder="COMFIRM PASSWORD" />
-          <button class="btn-signup">Sign Up</button>
+          <button class="btn-signup">Sign Up</a>
         </form>
 
         <div class="success">
@@ -78,9 +79,7 @@
         </div>
       </div>
       <br>
-      <div class="forgot">
-        <a href="forgotpassword.php">Forgot your password?</a>
-      </div>
+      
 
       <!-- <div>
           <div class="cover-photo"></div>

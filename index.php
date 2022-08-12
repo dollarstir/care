@@ -241,18 +241,19 @@
 	          <div class="attr-nav">
 	            <ul>
 	              
-				<li> <a href="#">
-	              <div data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-user"></i> Staff Sign In</div>
+				<li> <a href="login.php">
+					
+	              <div data-bs-toggle="modal" ><i class="fas fa-user"></i> Login</div>
 	              </a>
 	              
 	            </li>
 
 
-				<li> <a href="#">
+				<!-- <li> <a href="#">
 	              <div data-bs-toggle="modal" data-bs-target="#exampleModall"><i class="fas fa-user"></i> Staff Sign Up</div>
 	              </a>
 	              
-	            </li>
+	            </li> -->
 	              <!-- <li class="side-menu"><a href="assets/#"><i class="fas fa-user"></i>Stuff login</a></li> -->
 	            </ul>
 	          </div>

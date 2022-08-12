@@ -39,7 +39,7 @@ body {
 }
 
 .frame-short {
-  height: auto;
+  height: 512px;
   margin-top: 50px;
   box-shadow: 0px 2px 7px rgba(0,0,0,0.1);
 }
@@ -115,6 +115,24 @@ li {
   opacity: .0;
 }
 
+/* reset pass */
+
+.form-reset {
+  width: 430px;
+  height: 375px;
+	font-size: 16px;
+	font-weight: 300;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 55px;
+  transition: opacity .5s ease, transform .5s ease;
+}
+
+.form-reset-left {
+  transform: translateX(-400px);
+  opacity: .0;
+}
+
 .form-signup {
   width: 430px;
   height: 375px;
@@ -181,7 +199,7 @@ li {
     fill: rgba(255,255,255,.03);
 }
 
-.form-signin input, .form-signup input {
+.form-signin input, .form-signup input, .form-reset input {
   color: #ffffff;
   background-color:rgba(255, 255, 255, 0.148);
   border-color: 1px solid rgba(33, 30, 36, 0.095);
@@ -214,7 +232,7 @@ label {
 :focus {outline: none;
 }
 
-.form-signin input:focus, textarea:focus, .form-signup input:focus, textarea:focus {
+.form-signin input:focus, textarea:focus, .form-signup input:focus, textarea:focus, .form-reset input:focus, textarea:focus {
     background: rgba(255,255,255,.3);
     border: none; 
     padding-right: 40px;

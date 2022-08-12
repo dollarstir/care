@@ -4,6 +4,8 @@ $(function(){
   // forgot password form 
   $('.forgotpass').hide();
 
+  
+
   // hide back to login btn
   $('.logicont').hide();
 
@@ -274,6 +276,28 @@ $('.login').submit(function(e){
 
     };
     $.ajax(staff);
+});
+
+
+// statt login new 
+
+// Staff login with Ajax
+$('.form-signin').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: 'includes/reciever.php?action=login',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
 });
 
 

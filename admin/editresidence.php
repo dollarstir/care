@@ -1,7 +1,7 @@
 <?php
 include '../includes/adminfunction.php';
 
-begin1('Add Residence'); ?>
+begin1('Edit Residence'); ?>
 
 <body class="crm_body_bg">
 
@@ -12,7 +12,13 @@ begin1('Add Residence'); ?>
 
     <section class="main_content dashboard_part">
 
-    <?php adminheader(); ?>
+    <?php adminheader();
+
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM residence WHERE id = $id";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result);
+    ?>
 
         <div class="main_content_iner ">
             <div class="container-fluid p-0">
@@ -21,7 +27,7 @@ begin1('Add Residence'); ?>
                         <div class="white_box mb_30">
                             <div class="box_header ">
                                 <div class="main-title">
-                                    <h3 class="mb-0">Add Resident</h3>
+                                    <h3 class="mb-0">Edit Resident <?php echo $row['name']; ?></h3>
                                 </div>
                             </div>
                             <form class="addresidence">

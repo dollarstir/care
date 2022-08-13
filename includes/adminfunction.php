@@ -77,11 +77,11 @@ function begin1($title)
          <li class="">
              <a class="has-arrow" href="#" aria-expanded="false">
                  <img src="img/menu-icon/2.svg" alt="">
-                 <span>Residence</span>
+                 <span>Resident</span>
              </a>
              <ul>
-             <li><a href="addresidence.php">Add Residence</a></li>
-                 <li><a href="residence.php">View Residence</a></li>
+             <li><a href="addresidence.php">Add Resident</a></li>
+                 <li><a href="residence.php">View Resident</a></li>
                  
              </ul>
          </li>
@@ -300,7 +300,7 @@ function liststaff()
                             </a>
                             <div class="dropdown-menu dropdown-menu-right"
                                 aria-labelledby="dropdownMenuLink">
-                                <!--<a class="dropdown-item" href="editstaff.php?id='.$row['id'].'">Edit Staff</a>-->
+                                <a class="dropdown-item" href="editstaff.php?id='.$row['id'].'">Edit Staff</a>
                                 <button class="dropdown-item deletestaff" id="'.$row['id'].'">Delete</button>
 
                             </div>
@@ -367,8 +367,8 @@ function listresidence()
                     <div class="dropdown-menu dropdown-menu-right"
                         aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
-                        <a class="dropdown-item" target="blank" href="../upload/'.$row['pastrecord'].'">View Residence Records</a>
-                        <!--<a class="dropdown-item" href="#">Edit</a>-->
+                        <a class="dropdown-item" target="blank" href="../upload/'.$row['pastrecord'].'">View Resident Records</a>
+                        <a class="dropdown-item" href="editresidence.php?id='.$row['id'].'">Edit</a>
                         <button class="dropdown-item deleteresidence" id="'.$row['id'].'">Delete</button>
 
                     </div>
@@ -425,8 +425,8 @@ function staffrequest()
                     </a>
                     <div class="dropdown-menu dropdown-menu-right"
                         aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="'.$row2['maplink'].'" target="blank">View Residence location</a>
-                        <a class="dropdown-item" target="blank" href="../upload/'.$row2['pastrecord'].'">View Residence Records</a>
+                        <a class="dropdown-item" href="'.$row2['maplink'].'" target="blank">View Resident location</a>
+                        <a class="dropdown-item" target="blank" href="../upload/'.$row2['pastrecord'].'">View Resident Records</a>
                         ';
 
         if ($row['status'] == 'approved') {

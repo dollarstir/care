@@ -51,7 +51,7 @@ begin('Requests'); ?>
                                 <table class="table lms_table_active2">
                                     <thead>
                                         <tr>
-                                            <th scope="col"> Name of Residence</th>
+                                            <th scope="col"> Name of Resident</th>
                                             <th scope="col">Location</th>
                                             <th scope="col">Request date </th>
                                             <th scope="col">Approval date </th>

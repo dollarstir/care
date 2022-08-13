@@ -33,7 +33,7 @@
           <label for="username">Email</label>
           <input class="form-styling" type="text" name="email" placeholder="" />
           <label for="password">Password</label>
-          <input class="form-styling" type="text" name="password" placeholder="" />
+          <input class="form-styling" type="password" name="password" placeholder="" />
           <input type="checkbox" id="checkbox" />
 
           <div class="btn-animate">

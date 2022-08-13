@@ -197,6 +197,40 @@ $(function(){
 
       }
 
+      else if(response == 'residencedeleted'){
+
+        swal({
+            title: "Success",
+            text: "Residence Deleted Successfully",
+            timer: 1000,
+            type: 'success',
+            padding: "2em",
+            onOpen: function () {
+              swal.showLoading();
+            },
+          }).then(function (result) {
+            window.location="residence.php";
+          });
+
+    }
+
+    else if(response == 'staffdeleted'){
+
+      swal({
+          title: "Success",
+          text: "Staff Deleted Successfully",
+          timer: 1000,
+          type: 'success',
+          padding: "2em",
+          onOpen: function () {
+            swal.showLoading();
+          },
+        }).then(function (result) {
+          window.location="staff.php";
+        });
+
+  }
+
 
         else if(response == 'replysuccess'){
 
@@ -531,6 +565,48 @@ $(document).on('click','.deletemessage',function(e){
   var id = $(this).attr('id');
   var staff = {
       url: '../includes/reciever.php?action=deletemessage',
+      type: 'post',
+      data: {"id": id},
+      
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+
+
+
+// delete residence via ajax
+$(document).on('click','.deleteresidence',function(e){
+
+  e.preventDefault();
+  
+  var id = $(this).attr('id');
+  var staff = {
+      url: '../includes/reciever.php?action=deleteresidence',
+      type: 'post',
+      data: {"id": id},
+      
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
+
+
+
+// delete staff via ajax
+$(document).on('click','.deletestaff',function(e){
+
+  e.preventDefault();
+  
+  var id = $(this).attr('id');
+  var staff = {
+      url: '../includes/reciever.php?action=deletestaff',
       type: 'post',
       data: {"id": id},
       

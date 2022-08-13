@@ -301,7 +301,7 @@ function liststaff()
                             <div class="dropdown-menu dropdown-menu-right"
                                 aria-labelledby="dropdownMenuLink">
                                 <!--<a class="dropdown-item" href="editstaff.php?id='.$row['id'].'">Edit Staff</a>-->
-                                <a class="dropdown-item" href="deletestaff.php?id='.$row['id'].'">Delete</a>
+                                <button class="dropdown-item deletestaff" id="'.$row['id'].'">Delete</button>
 
                             </div>
                         </div>
@@ -369,7 +369,7 @@ function listresidence()
                         <a class="dropdown-item" href="'.$row['maplink'].'" target="blank">View on map</a>
                         <a class="dropdown-item" target="blank" href="../upload/'.$row['pastrecord'].'">View Residence Records</a>
                         <!--<a class="dropdown-item" href="#">Edit</a>-->
-                        <a class="dropdown-item" href="deleteresidence.php?id='.$row['id'].'">Delete</a>
+                        <button class="dropdown-item deleteresidence" id="'.$row['id'].'">Delete</button>
 
                     </div>
                 </div>
@@ -518,6 +518,28 @@ function replymessage($id, $reply)
     $update = mysqli_query($conn, "UPDATE messages SET reply = '$reply', replydate = '$replydate' WHERE id = '$id' ");
     if ($update) {
         echo 'replysuccess';
+    } else {
+        echo 'failed';
+    }
+}
+
+function deleteresidence($id)
+{
+    include 'dbcon.php';
+    $del = mysqli_query($conn, "DELETE FROM residence WHERE id = '$id'");
+    if ($del) {
+        echo 'residencedeleted';
+    } else {
+        echo 'failed';
+    }
+}
+
+function deletestaff($id)
+{
+    include 'dbcon.php';
+    $del = mysqli_query($conn, "DELETE FROM staff WHERE id = '$id'");
+    if ($del) {
+        echo 'staffdeleted';
     } else {
         echo 'failed';
     }

@@ -61,6 +61,16 @@ if (isset($_GET['action'])) {
             deletemessage($id);
             break;
 
+        case 'deleteresidence':
+            extract($_POST);
+            deleteresidence($id);
+            break;
+
+        case 'deletestaff':
+            extract($_POST);
+            deletestaff($id);
+            break;
+
         case 'makerequest':
             extract($_POST);
             makerequest($id);

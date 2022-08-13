@@ -1,7 +1,7 @@
 <?php
 include '../includes/adminfunction.php';
 
-begin1('Add Stuff'); ?>
+begin1('Edit Staff'); ?>
 
 <body class="crm_body_bg">
 

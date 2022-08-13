@@ -86,6 +86,11 @@ if (isset($_GET['action'])) {
             extract($_POST);
             makerequest($id);
             break;
+
+        case 'mail':
+            extract($_POST);
+            mailto($name, $email, $phone, $subject, $message);
+            break;
         default:
 
         break;

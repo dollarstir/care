@@ -702,5 +702,28 @@ $('.editstaff').submit(function(e){
   $.ajax(staff);
 });
 
+
+
+
+// sending mail to admin form contact page 
+
+$('.mail').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: 'includes/reciever.php?action=mail',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
     
 })

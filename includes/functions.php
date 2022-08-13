@@ -146,3 +146,32 @@ function forgotpass($email)
         }
     }
 }
+
+function mailto($name, $email, $phone, $subject, $message)
+{
+    $subject1 = 'Message from '.$name;
+    $message = '<html>
+            <head>
+            <title>'.$subject.'</title>
+            </head>
+            <body>
+            <h1>'.$subject.'</h1>
+            <p>From: '.$email.' ('.$phone.')</p>
+            <p>'.$message.'</p>
+            
+            <p>Regards,</p>
+            <p>The Homecare Team</p>
+            </body>
+            </html>';
+    $mymail = 'homeassist@iamdollarstir.tk';
+    $headers = 'From: '.$mymail."\r\n".
+            'Reply-To: '.$email."\r\n".
+            'X-Mailer: PHP/'.phpversion();
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+    if (mail('kolawea844@gmail.com', $subject1, $message, $headers)) {
+        echo 'success';
+    } else {
+        echo 'Failed to send message';
+    }
+}

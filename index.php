@@ -421,7 +421,7 @@
 	      
 	      <div class="col-md-12">
 	        <div class="ulockd-contact-form">
-	          <form method="post" id="contact-form6" action="" autocomplete="on">
+	          <form method="post" id="contact-form6" action="" autocomplete="on" class="mail">
 	            <div class="row">
 	              <div class="col-md-6">
 	                <div class="mb-4">

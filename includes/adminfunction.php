@@ -615,4 +615,53 @@ function editresidence($id, $name, $email, $phone, $address, $map, $dob, $gender
 // edit staff
 function editstaff($id, $name, $email, $phone, $dob, $password, $repass)
 {
+    include 'dbcon.php';
+    if (empty(trim($name)) || empty(trim($email)) || empty(trim($phone)) || empty(trim($dob))) {
+        echo 'please fill all fields';
+    } else {
+        if ($repass != $password) {
+            echo 'Password mismatch';
+        } elseif (empty($_FILES['image']['name'])) {
+            if (empty(trim($password))) {
+                $update = mysqli_query($conn, "UPDATE staff SET name = '$name', email = '$email', phone = '$phone', dob = '$dob' WHERE id = '$id' ");
+                if ($update) {
+                    echo 'Updated Successfully';
+                } else {
+                    echo 'failed';
+                }
+            } else {
+                $password = md5(mysqli_real_escape_string($conn, $password));
+                $update = mysqli_query($conn, "UPDATE staff SET name = '$name', email = '$email', phone = '$phone', dob = '$dob', password = '$password' WHERE id = '$id' ");
+                if ($update) {
+                    echo 'Updated Successfully';
+                } else {
+                    echo 'failed';
+                }
+            }
+        } else {
+            $filename = $_FILES['image']['name'];
+            $filetmp = $_FILES['image']['tmp_name'];
+            $filepath = '../upload/'.$filename;
+            if (move_uploaded_file($filetmp, $filepath)) {
+                if (empty(trim($password))) {
+                    $update = mysqli_query($conn, "UPDATE staff SET name = '$name', email = '$email', phone = '$phone', dob = '$dob', pic = '$filename' WHERE id = '$id' ");
+                    if ($update) {
+                        echo 'Updated Successfully';
+                    } else {
+                        echo 'failed';
+                    }
+                } else {
+                    $password = md5(mysqli_real_escape_string($conn, $password));
+                    $update = mysqli_query($conn, "UPDATE staff SET name = '$name', email = '$email', phone = '$phone', dob = '$dob', password = '$password', pic = '$filename' WHERE id = '$id' ");
+                    if ($update) {
+                        echo 'Updated Successfully';
+                    } else {
+                        echo 'failed';
+                    }
+                }
+            } else {
+                echo 'failed to upload';
+            }
+        }
+    }
 }

@@ -421,7 +421,7 @@
 	      
 	      <div class="col-md-12">
 	        <div class="ulockd-contact-form">
-	          <form method="post" id="contact-form6" action="" autocomplete="on" class="mail">
+	          <form  id="contact-form6" action="" autocomplete="on" class="mail">
 	            <div class="row">
 	              <div class="col-md-6">
 	                <div class="mb-4">
@@ -448,7 +448,7 @@
 	                  <textarea class="form-control ulockd-form-tb" name="message" id="" cols="30" rows="8" placeholder="Write Message"></textarea>
 	                </div>
 	                
-	                <button type="button" class="btn btn-default btn-thm mb15" id="submit">Send Details</button>
+	                <button type="submit" class="btn btn-default btn-thm mb15" >Send Details</button>
 	                <div id="alert"></div>
 	              </div>
 	            </div>

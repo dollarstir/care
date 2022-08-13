@@ -18,6 +18,10 @@ begin1('Edit Residence'); ?>
     $sql = "SELECT * FROM residence WHERE id = $id";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($result);
+    $timetaken = $row['timetaken'];
+    $timetaken = explode('-', $timetaken);
+    $from = $timetaken[0];
+    $to = $timetaken[1];
     ?>
 
         <div class="main_content_iner ">
@@ -34,7 +38,7 @@ begin1('Edit Residence'); ?>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Name</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="name">
+                                        placeholder="" name="name" value="<?php echo $row['name']; ?>">
 
                                     <input type="hidden" name="id" value="<?php echo $id; ?>">
                                 </div>
@@ -42,37 +46,37 @@ begin1('Edit Residence'); ?>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Email</label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="email">
+                                        placeholder="" name="email" value="<?php echo $row['email']; ?>">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Phone Number</label>
                                     <input type="number" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="phone">
+                                        placeholder="" name="phone" value="<?php echo $row['phone']; ?>">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Resident Address</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="address">
+                                        placeholder="" name="address" value="<?php echo $row['address']; ?>">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Link to location on Map</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="map">
+                                        placeholder="" name="map" value="<?php echo $row['maplink']; ?>">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Date of Birth</label>
                                     <input type="date" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="dob">
+                                        placeholder="" name="dob" value="<?php echo $row['dob']; ?>">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Select Gender</label>
-                                    <select class="default_sel mb_30 w-100" name="gender">
-                                        <option value="">Select gender</option>
+                                    <select class="default_sel mb_30 w-100" name="gender" value="<?php echo $row['gender']; ?>">
+                                        <option value="<?php echo $row['gender']; ?>"><?php echo $row['gender']; ?></option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                         
@@ -82,17 +86,21 @@ begin1('Edit Residence'); ?>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Care Plan</label>
                                     <textarea class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="medcondition"></textarea>
+                                        placeholder="" name="medcondition"><?php echo $row['medcondition']; ?></textarea>
                                 </div>
+                                <embed src="../upload/<?php echo $row['pastrecord']; ?>"  style="width:100%;height:150px;">
 
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Upload Past Record</label>
+                                    
+                                    <label class="form-label" for="exampleFormControlInput1">Change Past Record (Leave it blank to maintain current one)</label>
                                     <input type="file" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="pastrecord">
                                 </div>
 
+                                <embed src="../upload/<?php echo $row['image']; ?>"  style="width:150px;height:150px;">
+                                
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Upload Residnce Picture</label>
+                                    <label class="form-label" for="exampleFormControlInput1">Change Residnce Picture (Leave it blank to maintain current one)</label>
                                     <input type="file" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="image">
                                 </div>
@@ -100,18 +108,19 @@ begin1('Edit Residence'); ?>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Period</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="period">
+                                        placeholder="" name="period" value="<?php echo $row['howlong']; ?>" >
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Time (From) </label>
+                                    
+                                    <label class="form-label" for="exampleFormControlInput1"> Current Time From (<?php echo  $from; ?>) </label>
                                     <input type="time" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="from">
+                                        placeholder="" name="from" value=" <?php echo  $from; ?>" >
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Time (To) </label>
+                                    <label class="form-label" for="exampleFormControlInput1"> Current Time To (<?php echo  $to; ?>) </label>
                                     <input type="time" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="to">
+                                        placeholder="" name="to" value="<?php echo  $to; ?>">
                                 </div>
                                 
 

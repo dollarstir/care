@@ -660,5 +660,25 @@ $('.form-feedback').submit(function(e){
 
 
 
+// edit resident
+
+$('.editresidence').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: '../includes/reciever.php?action=editresidence',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
     
 })

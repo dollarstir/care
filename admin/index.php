@@ -29,7 +29,7 @@ begin1('Home'); ?>
                                                 </div>
                                                 <div class="count_content">
                                                     <h3><span class="counter"><?php echo countall('residence'); ?></span> </h3>
-                                                    <p>All Residence</p>
+                                                    <p>All Residents</p>
                                                 </div>
                                             </div>
                                             <div class="single_quick_activity d-flex">
@@ -38,7 +38,7 @@ begin1('Home'); ?>
                                                 </div>
                                                 <div class="count_content">
                                                     <h3><span class="counter"><?php echo availableresidence(); ?></span> </h3>
-                                                    <p>Available Residence</p>
+                                                    <p>Available Residents</p>
                                                 </div>
                                             </div>
 
@@ -48,7 +48,7 @@ begin1('Home'); ?>
                                                 </div>
                                                 <div class="count_content">
                                                     <h3><span class="counter"><?php undertreatment(); ?></span> </h3>
-                                                    <p>Residence Under treatment</p>
+                                                    <p>Residents Under treatment</p>
                                                 </div>
                                             </div>
                                             

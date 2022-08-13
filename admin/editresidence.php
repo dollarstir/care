@@ -13,7 +13,7 @@ begin1('Edit Residence'); ?>
     <section class="main_content dashboard_part">
 
     <?php adminheader();
-
+    include '../includes/dbcon.php';
     $id = $_GET['id'];
     $sql = "SELECT * FROM residence WHERE id = $id";
     $result = mysqli_query($conn, $sql);
@@ -27,14 +27,16 @@ begin1('Edit Residence'); ?>
                         <div class="white_box mb_30">
                             <div class="box_header ">
                                 <div class="main-title">
-                                    <h3 class="mb-0">Edit Resident <?php echo $row['name']; ?></h3>
+                                    <h3 class="mb-0">Edit Resident <?php echo $row['name']; ?> Details</h3>
                                 </div>
                             </div>
-                            <form class="addresidence">
+                            <form class="editresidence">
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Name</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="name">
+
+                                    <input type="hidden" name="id" value="<?php echo $id; ?>">
                                 </div>
 
                                 <div class="mb-3">

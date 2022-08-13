@@ -77,10 +77,10 @@ function begin($title)
          <li class="">
              <a class="has-arrow" href="#" aria-expanded="false">
                  <img src="img/menu-icon/2.svg" alt="">
-                 <span>Residence</span>
+                 <span>Residents</span>
              </a>
              <ul>
-                 <li><a href="residence.php">Available Residence</a></li>
+                 <li><a href="residence.php">Available Residents</a></li>
                  
              </ul>
          </li>

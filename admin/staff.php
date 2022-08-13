@@ -137,6 +137,8 @@ begin1('Staff'); ?>
     <script src="js/custom.js"></script>
     <script src="vendors/apex_chart/bar_active_1.js"></script>
     <script src="vendors/apex_chart/apex_chart_list.js"></script>
+    <script src="../assets/js/sweetalert2.all.min.js"></script>
+    <script src="../includes/sender.js"></script>
 </body>
 
 </html>

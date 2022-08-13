@@ -293,7 +293,7 @@ function completetask($id, $residenceid, $staffid, $staffreport)
             <title>Staff Review</title>
             </head>
             <body>
-            <h1>Password Reset</h1>
+            <h1>Staff Review</h1>
             <p>Hi '.$row['name'].',</p>
             <p>You recently  recieved treatment from our staff '.$row2['name'].' on '.$datecompleted.'. <br>kindly click on the link below to review our staff</p>
             <p><a href="ha.iamdollarstir.tk/feedback.php?id='.$id.'&residenceid='.$residenceid.'&staffid='.$staffid.'">Review your Staff</a>/p>

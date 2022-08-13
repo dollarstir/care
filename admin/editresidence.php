@@ -94,7 +94,7 @@ begin1('Edit Residence'); ?>
                                     
                                     <label class="form-label" for="exampleFormControlInput1">Change Past Record (Leave it blank to maintain current one)</label>
                                     <input type="file" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="pastrecord">
+                                        placeholder="" name="pastrecord" value="<?php echo $row['pastrecord']; ?>">
                                 </div>
 
                                 <embed src="../upload/<?php echo $row['image']; ?>"  style="width:150px;height:150px;">
@@ -102,7 +102,7 @@ begin1('Edit Residence'); ?>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Change Residnce Picture (Leave it blank to maintain current one)</label>
                                     <input type="file" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="image">
+                                        placeholder="" name="image" value="<?php echo  $row['image']; ?>">
                                 </div>
 
                                 <div class="mb-3">
@@ -114,12 +114,12 @@ begin1('Edit Residence'); ?>
                                 <div class="mb-3">
                                     
                                     <label class="form-label" for="exampleFormControlInput1"> Current Time From (<?php echo  $from; ?>) </label>
-                                    <input type="time" class="form-control" id="exampleFormControlInput1"
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="from" value=" <?php echo  $from; ?>" >
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1"> Current Time To (<?php echo  $to; ?>) </label>
-                                    <input type="time" class="form-control" id="exampleFormControlInput1"
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="to" value="<?php echo  $to; ?>">
                                 </div>
                                 

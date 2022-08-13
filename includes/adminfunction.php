@@ -544,3 +544,70 @@ function deletestaff($id)
         echo 'failed';
     }
 }
+
+function editresidence($id, $name, $email, $phone, $address, $map, $dob, $gender, $medcondition, $period, $time)
+{
+    include 'dbcon.php';
+    if (empty($_FILES['image']['name']) && empty($_FILES['pastrecord']['name'])) {
+        $filename = '';
+        $pastrecord = '';
+        $update = mysqli_query($conn, "UPDATE residence SET name = '$name', email = '$email', phone = '$phone', address = '$address', maplink = '$map', dob = '$dob',dob = '$dob',gender ='$gender', medcondition='$medcondition' ,howlong='$period',timetaken='$time' WHERE id = '$id' ");
+        if ($update) {
+            echo 'Updated Successfully';
+        } else {
+            echo 'failed';
+        }
+    } elseif (empty($_FILES['image']['name']) && !empty($_FILES['pastrecord']['name'])) {
+        $filename = '';
+        $pastrecord = $_FILES['pastrecord']['name'];
+        $pastrecordtmp = $_FILES['pastrecord']['tmp_name'];
+        $pastrecordpath = '../upload/'.$pastrecord;
+        // move_uploaded_file($pastrecordtmp, $pastrecordpath);
+
+        if (move_uploaded_file($pastrecordtmp, $pastrecordpath)) {
+            $update = mysqli_query($conn, "UPDATE residence SET name = '$name', email = '$email', phone = '$phone', address = '$address', maplink = '$map', dob = '$dob',dob = '$dob',gender ='$gender', medcondition='$medcondition',pastrecord= '$pastrecord' ,howlong='$period',timetaken='$time' WHERE id = '$id' ");
+            if ($update) {
+                echo 'Updated Successfully';
+            } else {
+                echo 'failed';
+            }
+        } else {
+            echo 'failed to upload';
+        }
+    } elseif (!empty($_FILES['image']['name']) && empty($_FILES['pastrecord']['name'])) {
+        $filename = $_FILES['image']['name'];
+        $filetmp = $_FILES['image']['tmp_name'];
+        $filepath = '../upload/'.$filename;
+        $pastrecord = '';
+        // move_uploaded_file($filetmp, $filepath);
+        if (move_uploaded_file($filetmp, $filepath)) {
+            $update = mysqli_query($conn, "UPDATE residence SET name = '$name', email = '$email', phone = '$phone', address = '$address', maplink = '$map', dob = '$dob',dob = '$dob',gender ='$gender', medcondition='$medcondition',image ='$filename' ,howlong='$period',timetaken='$time' WHERE id = '$id' ");
+            if ($update) {
+                echo 'Updated Successfully';
+            } else {
+                echo 'failed';
+            }
+        } else {
+            echo 'failed to upload';
+        }
+    } else {
+        $filename = $_FILES['image']['name'];
+        $filetmp = $_FILES['image']['tmp_name'];
+        $filepath = '../upload/'.$filename;
+
+        $pastrecord = $_FILES['pastrecord']['name'];
+        $pastrecordtmp = $_FILES['pastrecord']['tmp_name'];
+        $pastrecordpath = '../upload/'.$pastrecord;
+
+        if (move_uploaded_file($filetmp, $filepath) && move_uploaded_file($pastrecordtmp, $pastrecordpath)) {
+            $update = mysqli_query($conn, "UPDATE residence SET name = '$name', email = '$email', phone = '$phone', address = '$address', maplink = '$map', dob = '$dob',dob = '$dob',gender ='$gender', medcondition='$medcondition',pastrecord= '$pastrecord',image ='$filename' ,howlong='$period',timetaken='$time' WHERE id = '$id' ");
+            if ($update) {
+                echo 'Updated Successfully';
+            } else {
+                echo 'failed';
+            }
+        } else {
+            echo 'failed to upload';
+        }
+    }
+}

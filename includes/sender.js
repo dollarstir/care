@@ -680,5 +680,27 @@ $('.editresidence').submit(function(e){
   $.ajax(staff);
 });
 
+
+
+// edit staff
+
+$('.editstaff').submit(function(e){
+
+  e.preventDefault();
+  
+  var staff = {
+      url: '../includes/reciever.php?action=editstaff',
+      type: 'post',
+      data: new FormData(this),
+      cache: false,
+      contentType: false,
+      processData: false,
+      beforeSend: loading,
+      success: success
+
+  };
+  $.ajax(staff);
+});
+
     
 })

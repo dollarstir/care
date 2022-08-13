@@ -12,7 +12,14 @@ begin1('Add Stuff'); ?>
 
     <section class="main_content dashboard_part">
 
-    <?php adminheader(); ?>
+    <?php adminheader();
+
+    include '../includes/dbcon.php';
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM staff WHERE id = $id";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result);
+    ?>
 
         <div class="main_content_iner ">
             <div class="container-fluid p-0">
@@ -21,42 +28,44 @@ begin1('Add Stuff'); ?>
                         <div class="white_box mb_30">
                             <div class="box_header ">
                                 <div class="main-title">
-                                    <h3 class="mb-0">Add Staff</h3>
+                                    <h3 class="mb-0">Edit Staff <?php echo $row['name']; ?></h3>
                                 </div>
                             </div>
-                            <form class="addstaff">
+                            <form class="editstaff">
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Name</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="name">
+                                        placeholder="" name="name" value="<?php echo $row['name']; ?>">
+                                        <input type="hidden" name="id" value="<?php echo $id; ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Email</label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="email">
+                                        placeholder="" name="email" value="<?php echo $row['email']; ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Phone</label>
                                     <input type="number" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="phone">
+                                        placeholder="" name="phone" value="<?php echo $row['phone']; ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Date of Birth</label>
                                     <input type="date" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="dob">
+                                        placeholder="" name="dob" value="<?php echo $row['dob']; ?>">
                                 </div>
+                                <embed src="../upload/<?php echo $row['pic']; ?>"  style="width:150px;height:150px;">
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">Profile Picture</label>
+                                    <label class="form-label" for="exampleFormControlInput1">Change Profile Picture (Leave it blank to maintain current one)</label>
                                     <input type="file" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="image">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1">New Password</label>
+                                    <label class="form-label" for="exampleFormControlInput1">New Password(Leave it blank to maintain current one)</label>
                                     <input type="password" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="" name="password">
+                                        placeholder="" name="password" >
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="exampleFormControlInput1"> Re-enter password</label>
+                                    <label class="form-label" for="exampleFormControlInput1"> Re-enter New password (Leave it blank to maintain current one)</label>
                                     <input type="password" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="repass">
                                 </div>

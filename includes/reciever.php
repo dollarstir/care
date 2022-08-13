@@ -32,6 +32,11 @@ if (isset($_GET['action'])) {
             extract($_POST);
             addstaff($name, $email, $phone, $dob, $password, $repass);
             break;
+
+        case 'editstaff':
+            extract($_POST);
+            editstaff($id, $name, $email, $phone, $dob, $password, $repass);
+            break;
         case 'addresidence':
             extract($_POST);
             $time = $from.' - '.$to;

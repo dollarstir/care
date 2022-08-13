@@ -611,3 +611,8 @@ function editresidence($id, $name, $email, $phone, $address, $map, $dob, $gender
         }
     }
 }
+
+// edit staff
+function editstaff($id, $name, $email, $phone, $dob, $password, $repass)
+{
+}

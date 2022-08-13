@@ -172,6 +172,6 @@ function mailto($name, $email, $phone, $subject, $message)
     if (mail('kolawolea844@gmail.com', $subject1, $message, $headers)) {
         echo 'success';
     } else {
-        echo 'Failed to send message';
+        echo 'Failed to send messages';
     }
 }

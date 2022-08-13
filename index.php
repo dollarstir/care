@@ -243,7 +243,7 @@
 	              
 				<li> <a href="login.php">
 					
-	              <div data-bs-toggle="modal" ><i class="fas fa-user"></i> Login</div>
+	              <div data-bs-toggle="modal" ><i class="fas fa-user"></i> LOGIN</div>
 	              </a>
 	              
 	            </li>

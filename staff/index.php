@@ -29,7 +29,7 @@ begin('Home'); ?>
                                                 </div>
                                                 <div class="count_content">
                                                     <h3><span class="counter"><?php echo availableresidencestaff(); ?></span> </h3>
-                                                    <p>Available Residence</p>
+                                                    <p>Available Residents</p>
                                                 </div>
                                             </div>
                                             <div class="single_quick_activity d-flex">

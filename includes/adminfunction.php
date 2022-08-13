@@ -314,7 +314,7 @@ function liststaff()
     }
 }
 
-function addresidence($name, $email, $address, $map, $dob, $gender, $medcondition, $period, $time)
+function addresidence($name, $email, $phone, $address, $map, $dob, $gender, $medcondition, $period, $time)
 {
     include 'dbcon.php';
     $filename = $_FILES['image']['name'];
@@ -326,7 +326,7 @@ function addresidence($name, $email, $address, $map, $dob, $gender, $medconditio
     if (move_uploaded_file($tempname, $folder) && move_uploaded_file($tempname1, $folder1)) {
         $dateadded = date('jS F, Y');
         // var_dump(mysqli_query($conn, "INSERT INTO residence (name,image,address,maplink,dob,gender,medcondition,pastrecord,howlong,timetaken,status,dateadded) VALUES ('$name','$filename','$address','$map','$dob','$gender','$medcondition','$pastrecord','$period','$time','available','$dateadded')"));
-        $insert = mysqli_query($conn, "INSERT INTO residence (name,email,image,address,maplink,dob,gender,medcondition,pastrecord,howlong,timetaken,status,dateadded) VALUES ('$name','$email','$filename','$address','$map','$dob','$gender','$medcondition','$pastrecord','$period','$time','available','$dateadded')");
+        $insert = mysqli_query($conn, "INSERT INTO residence (name,email,phone,image,address,maplink,dob,gender,medcondition,pastrecord,howlong,timetaken,status,dateadded) VALUES ('$name','$email','$phone','$filename','$address','$map','$dob','$gender','$medcondition','$pastrecord','$period','$time','available','$dateadded')");
         if ($insert) {
             echo 'success';
         } else {

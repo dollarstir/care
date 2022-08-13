@@ -38,6 +38,12 @@ begin1('Add Residence'); ?>
                                 </div>
 
                                 <div class="mb-3">
+                                    <label class="form-label" for="exampleFormControlInput1">Phone Number</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="" name="phone">
+                                </div>
+
+                                <div class="mb-3">
                                     <label class="form-label" for="exampleFormControlInput1">Residence Address</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1"
                                         placeholder="" name="address">

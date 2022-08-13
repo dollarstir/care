@@ -169,7 +169,7 @@ function mailto($name, $email, $phone, $subject, $message)
             'X-Mailer: PHP/'.phpversion();
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-    if (mail('kolawea844@gmail.com', $subject1, $message, $headers)) {
+    if (mail('kolawolea844@gmail.com', $subject1, $message, $headers)) {
         echo 'success';
     } else {
         echo 'Failed to send message';

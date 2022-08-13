@@ -4,7 +4,7 @@ function begin1($title)
 {
     session_start();
     if (!isset($_SESSION['admin'])) {
-        echo '<script>window.location.href = "l../login.php";</script>';
+        echo '<script>window.location.href = "../login.php";</script>';
     }
 
     echo '<!DOCTYPE html>
